@@ -1,35 +1,16 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
 
-const DATA_FILE = path.join(process.cwd(), "data", "vowbearers.json");
 const NPOINT_URL = process.env.VOWBEARER_NPOINT_URL;
+const IS_PRODUCTION = process.env.NODE_ENV === "production";
 
-function ensureDataFile() {
-  const dir = path.dirname(DATA_FILE);
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-  if (!fs.existsSync(DATA_FILE)) {
-    fs.writeFileSync(DATA_FILE, JSON.stringify([], null, 2));
-  }
-}
-
-function readData() {
-  ensureDataFile();
-  const raw = fs.readFileSync(DATA_FILE, "utf-8");
-  return JSON.parse(raw);
-}
-
-function writeData(data: unknown[]) {
-  ensureDataFile();
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
-}
+// In-memory fallback for development without npoint
+let memoryData: any[] = [];
 
 // GET - fetch all vowbearers
 export async function GET() {
   try {
-    // If npoint URL exists, fetch from npoint
+    // Always try npoint first if URL exists
     if (NPOINT_URL) {
       const response = await fetch(NPOINT_URL, {
         cache: "no-store",
@@ -41,17 +22,11 @@ export async function GET() {
       }
     }
 
-    // Fallback to local JSON
-    const data = readData();
-    return NextResponse.json(data);
-  } catch {
-    // If npoint fails, try local
-    try {
-      const data = readData();
-      return NextResponse.json(data);
-    } catch {
-      return NextResponse.json([], { status: 500 });
-    }
+    // Fallback to memory in production or if npoint fails
+    return NextResponse.json(memoryData);
+  } catch (error) {
+    console.error("GET error:", error);
+    return NextResponse.json(memoryData);
   }
 }
 
@@ -75,7 +50,7 @@ export async function POST(req: NextRequest) {
       date: date || new Date().toISOString(),
     };
 
-    // If npoint URL exists, post to npoint
+    // If npoint URL exists, update npoint
     if (NPOINT_URL) {
       try {
         // Get current data from npoint
@@ -89,9 +64,11 @@ export async function POST(req: NextRequest) {
         }
 
         // Add new entry
-        const updatedData = [...currentData, newEntry];
+        const updatedData = Array.isArray(currentData) 
+          ? [...currentData, newEntry]
+          : [newEntry];
 
-        // Update npoint
+        // Update npoint - npoint uses POST to replace entire document
         const updateResponse = await fetch(NPOINT_URL, {
           method: "POST",
           headers: {
@@ -101,22 +78,39 @@ export async function POST(req: NextRequest) {
         });
 
         if (updateResponse.ok) {
-          // Also save to local as backup
-          writeData(updatedData);
+          // Update memory fallback
+          memoryData = updatedData;
           return NextResponse.json(newEntry, { status: 201 });
+        } else {
+          const errorText = await updateResponse.text();
+          console.error("Npoint update failed:", updateResponse.status, errorText);
+          throw new Error("Npoint update failed");
         }
       } catch (error) {
-        console.error("Npoint error, falling back to local:", error);
+        console.error("Npoint error:", error);
+        
+        // In production, return error if npoint fails
+        if (IS_PRODUCTION) {
+          return NextResponse.json(
+            { error: "Failed to save data to npoint" },
+            { status: 500 }
+          );
+        }
       }
     }
 
-    // Fallback to local JSON
-    const data = readData();
-    data.push(newEntry);
-    writeData(data);
+    // Fallback to memory (development only)
+    if (!IS_PRODUCTION) {
+      memoryData.push(newEntry);
+      return NextResponse.json(newEntry, { status: 201 });
+    }
 
-    return NextResponse.json(newEntry, { status: 201 });
-  } catch {
+    return NextResponse.json(
+      { error: "No storage configured" },
+      { status: 500 }
+    );
+  } catch (error) {
+    console.error("POST error:", error);
     return NextResponse.json(
       { error: "Failed to save data" },
       { status: 500 }
