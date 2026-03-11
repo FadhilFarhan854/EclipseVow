@@ -1,0 +1,5264 @@
+[
+  {
+    "name": "June Bride Event (all mini boss)",
+    "level": 0,
+    "type": "-",
+    "hp": 0,
+    "element": "Neutral",
+    "exp": 0,
+    "tamable": false,
+    "spawn": {
+      "map": "Event",
+      "link": "https://coryn.club/map.php?id=87"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Bride Box",
+        "link": "https://coryn.club/item.php?id=2033"
+      },
+      {
+        "category": "Usable",
+        "name": "Groom Box",
+        "link": "https://coryn.club/item.php?id=2034"
+      }
+    ]
+  },
+  {
+    "name": "Persimmon Coryn",
+    "level": 25,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": "Unknown",
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Dried Persimon",
+        "link": "https://coryn.club/item.php?id=1427"
+      },
+      {
+        "category": "Usable",
+        "name": "Salt-Grilled Saury",
+        "link": "https://coryn.club/item.php?id=1429"
+      },
+      {
+        "category": "Usable",
+        "name": "Matsutake Soup",
+        "link": "https://coryn.club/item.php?id=1431"
+      },
+      {
+        "category": "Usable",
+        "name": "Baked Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1428"
+      },
+      {
+        "category": "Usable",
+        "name": "Mashed Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1430"
+      }
+    ]
+  },
+  {
+    "name": "Dark Mushroom",
+    "level": 30,
+    "type": "-",
+    "hp": 17500,
+    "element": "Dark",
+    "exp": 440,
+    "tamable": false,
+    "spawn": {
+      "map": "Isthmus Of Kaus",
+      "link": "https://coryn.club/map.php?id=9"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Poisonous Mushroom",
+        "link": "https://coryn.club/item.php?id=161"
+      },
+      {
+        "category": "Material",
+        "name": "Mushroom Spore",
+        "link": "https://coryn.club/item.php?id=552"
+      },
+      {
+        "category": "Material",
+        "name": "Turbid Crystal",
+        "link": "https://coryn.club/item.php?id=436"
+      }
+    ],
+    "dye": [
+      "A",
+      "54",
+      "C"
+    ]
+  },
+  {
+    "name": "Colon Commander",
+    "level": 33,
+    "type": "-",
+    "hp": 22000,
+    "element": "Fire",
+    "exp": 440,
+    "tamable": false,
+    "spawn": {
+      "map": "Strum Road",
+      "link": "https://coryn.club/map.php?id=23"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita I",
+        "link": "https://coryn.club/item.php?id=260"
+      },
+      {
+        "category": "Material",
+        "name": "Bundled Leaves",
+        "link": "https://coryn.club/item.php?id=456"
+      },
+      {
+        "category": "Material",
+        "name": "Split Wooden Helm",
+        "link": "https://coryn.club/item.php?id=436"
+      }
+    ],
+    "dye": [
+      "2",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Crimsosh",
+    "level": 37,
+    "type": "-",
+    "hp": 22500,
+    "element": "Fire",
+    "exp": 500,
+    "tamable": false,
+    "spawn": {
+      "map": "Athema Ruins: Area 2",
+      "link": "https://coryn.club/map.php?id=20"
+    },
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Tortuga",
+    "level": 40,
+    "type": "-",
+    "hp": 13500,
+    "element": "Water",
+    "exp": 560,
+    "tamable": false,
+    "spawn": {
+      "map": "Icule Lake",
+      "link": "https://coryn.club/map.php?id=26"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Lizard Skin",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Turtle Shell",
+        "link": "https://coryn.club/item.php?id=179"
+      },
+      {
+        "category": "Ore",
+        "name": "Damascus Ore",
+        "link": "https://coryn.club/item.php?id=228"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ],
+    "image": "https://coryn.club/monster/97.jpg"
+  },
+  {
+    "name": "Silver Roar",
+    "level": 42,
+    "type": "-",
+    "hp": 14570,
+    "element": "Water",
+    "exp": 590,
+    "tamable": false,
+    "spawn": {
+      "map": "Debakcy Channel: B1",
+      "link": "https://coryn.club/map.php?id=17"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Fairy Feather",
+        "link": "https://coryn.club/item.php?id=458"
+      },
+      {
+        "category": "Material",
+        "name": "Bead Fragment",
+        "link": "https://coryn.club/item.php?id=436"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "1"
+    ]
+  },
+  {
+    "name": "Miracle Potum",
+    "level": 42,
+    "type": "-",
+    "hp": 29000,
+    "element": "Light",
+    "exp": 600,
+    "tamable": false,
+    "spawn": {
+      "map": "Ruined Temple: Area 2",
+      "link": "https://coryn.club/map.php?id=13"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Save Point",
+        "link": "https://coryn.club/item.php?id=266"
+      },
+      {
+        "category": "Usable",
+        "name": "Hard Apple",
+        "link": "https://coryn.club/item.php?id=252"
+      },
+      {
+        "category": "Material",
+        "name": "Potum Nail",
+        "link": "https://coryn.club/item.php?id=436"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "King Potum",
+    "level": 50,
+    "type": "-",
+    "hp": 8000,
+    "element": "Neutral",
+    "exp": 320,
+    "tamable": false,
+    "spawn": {
+      "map": "Athema Ruins: Area 1",
+      "link": "https://coryn.club/map.php?id=19"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Hard Apple",
+        "link": "https://coryn.club/item.php?id=252"
+      },
+      {
+        "category": "Material",
+        "name": "Bead Fragment",
+        "link": "https://coryn.club/item.php?id=482"
+      },
+      {
+        "category": "Material",
+        "name": "Potum Nail",
+        "link": "https://coryn.club/item.php?id=11"
+      }
+    ]
+  },
+  {
+    "name": "Sand Mole",
+    "level": 50,
+    "type": "-",
+    "hp": 20000,
+    "element": "Earth",
+    "exp": 380,
+    "tamable": false,
+    "spawn": {
+      "map": "Centerio Highlands",
+      "link": "https://coryn.club/map.php?id=93"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Sand Mole Meat",
+        "link": "https://coryn.club/item.php?id=264"
+      },
+      {
+        "category": "Material",
+        "name": "Sand Crystal",
+        "link": "https://coryn.club/item.php?id=527"
+      },
+      {
+        "category": "Material",
+        "name": "Sand Mole Skin",
+        "link": "https://coryn.club/item.php?id=184"
+      }
+    ]
+  },
+  {
+    "name": "Persimmon Coryn",
+    "level": 50,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": "Unknown",
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Baked Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1428"
+      },
+      {
+        "category": "Usable",
+        "name": "Mashed Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1430"
+      },
+      {
+        "category": "Usable",
+        "name": "Ginkgo Nut Rice",
+        "link": "https://coryn.club/item.php?id=1432"
+      },
+      {
+        "category": "Usable",
+        "name": "Dried Persimon",
+        "link": "https://coryn.club/item.php?id=1427"
+      },
+      {
+        "category": "Usable",
+        "name": "Salt-Grilled Saury",
+        "link": "https://coryn.club/item.php?id=1429"
+      }
+    ]
+  },
+  {
+    "name": "Giant Boar",
+    "level": 52,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 800,
+    "tamable": false,
+    "spawn": {
+      "map": "Nisel Mountain",
+      "link": "https://coryn.club/map.php?id=27"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Sturdy Fur",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Animal Skin",
+        "link": "https://coryn.club/item.php?id=213"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Skeleton",
+    "level": 54,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Neutral",
+    "exp": 840,
+    "tamable": false,
+    "spawn": {
+      "map": "Zoktzda Ruins",
+      "link": "https://coryn.club/map.php?id=42"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Ancient Gold Coin",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Wandering Spirit",
+        "link": "https://coryn.club/item.php?id=2"
+      },
+      {
+        "category": "Material",
+        "name": "Skeleton Bone",
+        "link": "https://coryn.club/item.php?id=232"
+      }
+    ],
+    "dye": [
+      "26",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Big Coryn",
+    "level": 60,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 1730,
+    "tamable": false,
+    "spawn": {
+      "map": "Douce Hamlet",
+      "link": "https://coryn.club/map.php?id=45"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Magic Hammer",
+        "link": "https://coryn.club/item.php?id=131"
+      },
+      {
+        "category": "Material",
+        "name": "Plant Skin",
+        "link": "https://coryn.club/item.php?id=469"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ],
+    "image": "https://coryn.club/monster/159.jpg"
+  },
+  {
+    "name": "Stone Mercenary",
+    "level": 60,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 960,
+    "tamable": false,
+    "spawn": {
+      "map": "Zoktzda Ruins : Abnormal Space",
+      "link": "https://coryn.club/map.php?id=43"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Pebble",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Zoktzda Stone",
+        "link": "https://coryn.club/item.php?id=157"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Seltirios",
+    "level": 60,
+    "type": "-",
+    "hp": 60000,
+    "element": "Dark",
+    "exp": 960,
+    "tamable": false,
+    "spawn": {
+      "map": "Aulada Ancient Tower",
+      "link": "https://coryn.club/map.php?id=50"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Crimson Claw",
+        "link": "https://coryn.club/item.php?id=567"
+      },
+      {
+        "category": "Material",
+        "name": "Red Crystal Stone Fragment",
+        "link": "https://coryn.club/item.php?id=53"
+      },
+      {
+        "category": "Material",
+        "name": "Little Wyvern Wing",
+        "link": "https://coryn.club/item.php?id=173"
+      }
+    ]
+  },
+  {
+    "name": "Big Mask",
+    "level": 70,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Wind",
+    "exp": 2400,
+    "tamable": false,
+    "spawn": {
+      "map": "Haotas Ravine",
+      "link": "https://coryn.club/map.php?id=56"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Ravine Dew",
+        "link": "https://coryn.club/item.php?id=559"
+      },
+      {
+        "category": "Material",
+        "name": "Strong Vine",
+        "link": "https://coryn.club/item.php?id=172"
+      },
+      {
+        "category": "Material",
+        "name": "Steel Seed Coat",
+        "link": "https://coryn.club/item.php?id=212"
+      }
+    ]
+  },
+  {
+    "name": "Arcoiris",
+    "level": 70,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Neutral",
+    "exp": 2400,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Bead Fragment",
+        "link": "https://coryn.club/item.php?id=465"
+      },
+      {
+        "category": "Material",
+        "name": "Rainbow Feather",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Bird Wing",
+        "link": "https://coryn.club/item.php?id=11"
+      }
+    ],
+    "dye": [
+      "22",
+      "27",
+      "46"
+    ]
+  },
+  {
+    "name": "Outer World Wolf",
+    "level": 70,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 4800,
+    "tamable": false,
+    "spawn": {
+      "map": "Gate to Another World: Area 2",
+      "link": "https://coryn.club/map.php?id=101"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Space Wolf Horn",
+        "link": "https://coryn.club/item.php?id=1154"
+      },
+      {
+        "category": "Material",
+        "name": "Space Wolf Fur",
+        "link": "https://coryn.club/item.php?id=1167"
+      },
+      {
+        "category": "Material",
+        "name": "Space Wolf Claw",
+        "link": "https://coryn.club/item.php?id=1166"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Outer World Wolf",
+    "level": 70,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 4800,
+    "tamable": false,
+    "spawn": {
+      "map": "Gate to Another World: Area 1",
+      "link": "https://coryn.club/map.php?id=100"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Space Wolf Horn",
+        "link": "https://coryn.club/item.php?id=1154"
+      },
+      {
+        "category": "Material",
+        "name": "Space Wolf Fur",
+        "link": "https://coryn.club/item.php?id=1167"
+      },
+      {
+        "category": "Material",
+        "name": "Space Wolf Claw",
+        "link": "https://coryn.club/item.php?id=1166"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Moonlight Potum",
+    "level": 72,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 1860,
+    "tamable": false,
+    "spawn": {
+      "map": "New Moon Palace: Innermost",
+      "link": "https://coryn.club/map.php?id=62"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      },
+      {
+        "category": "Material",
+        "name": "Potum Nail",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Moonlight Flower",
+        "link": "https://coryn.club/item.php?id=463"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Persimmon Coryn",
+    "level": 75,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": "Unknown",
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Dried Persimon",
+        "link": "https://coryn.club/item.php?id=1427"
+      },
+      {
+        "category": "Usable",
+        "name": "Salt-Grilled Saury",
+        "link": "https://coryn.club/item.php?id=1429"
+      },
+      {
+        "category": "Usable",
+        "name": "Matsutake Soup",
+        "link": "https://coryn.club/item.php?id=1431"
+      },
+      {
+        "category": "Usable",
+        "name": "Baked Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1428"
+      },
+      {
+        "category": "Usable",
+        "name": "Mashed Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1430"
+      }
+    ]
+  },
+  {
+    "name": "Gigant Knight",
+    "level": 76,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 2680,
+    "tamable": false,
+    "spawn": {
+      "map": "Saham Crater",
+      "link": "https://coryn.club/map.php?id=65"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Hard Stone",
+        "link": "https://coryn.club/item.php?id=565"
+      },
+      {
+        "category": "Ore",
+        "name": "Damascus Ore",
+        "link": "https://coryn.club/item.php?id=436"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Caspy",
+    "level": 77,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 2720,
+    "tamable": false,
+    "spawn": {
+      "map": "Ancient Empress Tomb: Area 2",
+      "link": "https://coryn.club/map.php?id=73"
+    },
+    "dye": [
+      "1",
+      "B",
+      "C",
+      "A",
+      "49",
+      "5"
+    ]
+  },
+  {
+    "name": "Violacoon",
+    "level": 80,
+    "type": "-",
+    "hp": 450000,
+    "element": "Earth",
+    "exp": 5472,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Flower Nectar",
+        "link": "https://coryn.club/item.php?id=78"
+      },
+      {
+        "category": "Material",
+        "name": "Bear Fur",
+        "link": "https://coryn.club/item.php?id=827"
+      },
+      {
+        "category": "Material",
+        "name": "Sharp Bear Claw",
+        "link": "https://coryn.club/item.php?id=828"
+      }
+    ]
+  },
+  {
+    "name": "Metal Stinger",
+    "level": 82,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 4050,
+    "tamable": false,
+    "spawn": {
+      "map": "Akaku Desert: Area 1",
+      "link": "https://coryn.club/map.php?id=105"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Hard Scissor",
+        "link": "https://coryn.club/item.php?id=1205"
+      },
+      {
+        "category": "Material",
+        "name": "Sand Pyroxene",
+        "link": "https://coryn.club/item.php?id=1354"
+      },
+      {
+        "category": "Material",
+        "name": "Scorpion Tail",
+        "link": "https://coryn.club/item.php?id=1203"
+      }
+    ]
+  },
+  {
+    "name": "Shining Gentleman",
+    "level": 82,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 6000,
+    "tamable": false,
+    "spawn": {
+      "map": "Lost Town: Square",
+      "link": "https://coryn.club/map.php?id=91"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Polyester Cloth",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Lost Footstep",
+        "link": "https://coryn.club/item.php?id=1054"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Metal Stinger",
+    "level": 82,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 4050,
+    "tamable": false,
+    "spawn": {
+      "map": "Akaku Desert: Area 2",
+      "link": "https://coryn.club/map.php?id=106"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Hard Scissor",
+        "link": "https://coryn.club/item.php?id=1205"
+      },
+      {
+        "category": "Material",
+        "name": "Sand Pyroxene",
+        "link": "https://coryn.club/item.php?id=1354"
+      },
+      {
+        "category": "Material",
+        "name": "Scorpion Tail",
+        "link": "https://coryn.club/item.php?id=1203"
+      }
+    ]
+  },
+  {
+    "name": "Death Colon",
+    "level": 84,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 4620,
+    "tamable": false,
+    "spawn": {
+      "map": "Vyshed the Tainted Land: Area 2",
+      "link": "https://coryn.club/map.php?id=97"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Rotten Colon Skin",
+        "link": "https://coryn.club/item.php?id=1165"
+      },
+      {
+        "category": "Material",
+        "name": "Decayed Branch",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Withered Leaf",
+        "link": "https://coryn.club/item.php?id=1105"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "54"
+    ]
+  },
+  {
+    "name": "Granny",
+    "level": 88,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 3818,
+    "tamable": false,
+    "spawn": {
+      "map": "Abyss of No Return: Area 3",
+      "link": "https://coryn.club/map.php?id=124"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Tree Spirit Soul",
+        "link": "https://coryn.club/item.php?id=1458"
+      },
+      {
+        "category": "Material",
+        "name": "Magic Charged Branch",
+        "link": "https://coryn.club/item.php?id=1457"
+      },
+      {
+        "category": "Material",
+        "name": "Ancient Big Tree",
+        "link": "https://coryn.club/item.php?id=1549"
+      }
+    ],
+    "image": "https://coryn.club/monster/438.jpg"
+  },
+  {
+    "name": "Grylle",
+    "level": 90,
+    "type": "-",
+    "hp": 150000,
+    "element": "Dark",
+    "exp": 1720,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Strengthened Armor",
+        "link": "https://coryn.club/item.php?id=1531"
+      }
+    ]
+  },
+  {
+    "name": "Golden Potum (9M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "dye": [
+      "A",
+      "A",
+      "B",
+      "81",
+      "4",
+      "B",
+      "C",
+      "5",
+      "C",
+      "A",
+      "82",
+      "C",
+      "A",
+      "B",
+      "82"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2016)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C",
+      "A",
+      "B",
+      "1",
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Silver Coryn (2015)",
+    "level": 100,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": "Unknown",
+    "tamable": false,
+    "spawn": {
+      "map": "Event",
+      "link": "https://coryn.club/map.php?id=87"
+    },
+    "dye": [
+      "A",
+      "40",
+      "B",
+      "C",
+      "B",
+      "C",
+      "5",
+      "B",
+      "C",
+      "49",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2016)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "5",
+      "A",
+      "B",
+      "C",
+      "1",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (3M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Event",
+      "link": "https://coryn.club/map.php?id=87"
+    },
+    "dye": [
+      "5",
+      "A",
+      "1",
+      "C",
+      "5",
+      "B",
+      "C",
+      "B",
+      "C",
+      "A",
+      "50",
+      "C",
+      "A",
+      "B",
+      "50"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2016)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C",
+      "5",
+      "B",
+      "C",
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (6M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "dye": [
+      "A",
+      "A",
+      "38",
+      "C",
+      "51",
+      "B",
+      "C",
+      "3",
+      "C",
+      "A",
+      "B",
+      "54",
+      "38",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (9M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "dye": [
+      "5",
+      "A",
+      "38",
+      "C",
+      "44",
+      "B",
+      "C",
+      "B",
+      "C",
+      "82",
+      "B",
+      "C",
+      "A",
+      "4",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2017)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "dye": [
+      "A",
+      "B",
+      "C",
+      "A",
+      "B",
+      "C",
+      "1",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (9M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "dye": [
+      "A",
+      "38",
+      "B",
+      "C",
+      "A",
+      "40",
+      "C",
+      "80",
+      "C",
+      "A",
+      "54",
+      "C",
+      "A",
+      "B",
+      "18"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2017)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "dye": [
+      "5",
+      "B",
+      "C",
+      "A",
+      "B",
+      "C",
+      "A",
+      "1",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (9M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "dye": [
+      "A",
+      "A",
+      "5",
+      "C",
+      "A",
+      "44",
+      "C",
+      "B",
+      "5",
+      "A",
+      "81",
+      "C",
+      "A",
+      "B",
+      "38"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2017)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "dye": [
+      "A",
+      "5",
+      "C",
+      "38",
+      "B",
+      "C",
+      "A",
+      "B",
+      "1"
+    ]
+  },
+  {
+    "name": "Golden Potum (8M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "dye": [
+      "81",
+      "A",
+      "37",
+      "C",
+      "65",
+      "B",
+      "C",
+      "B",
+      "C",
+      "A",
+      "B",
+      "47",
+      "75",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (10M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Tolbas GrassLand",
+      "link": "https://coryn.club/map.php?id=248"
+    },
+    "dye": [
+      "A",
+      "63",
+      "B",
+      "C",
+      "46",
+      "B",
+      "C",
+      "5",
+      "C",
+      "A",
+      "64",
+      "C",
+      "A",
+      "B",
+      "64"
+    ]
+  },
+  {
+    "name": "Silver Coryn (2021)",
+    "level": 100,
+    "type": "-",
+    "hp": 100,
+    "element": "Neutral",
+    "exp": 1,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "72",
+      "A",
+      "38",
+      "C",
+      "B",
+      "C",
+      "A",
+      "72",
+      "C",
+      "A",
+      "B",
+      "72"
+    ]
+  },
+  {
+    "name": "Golden Potum (6M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "dye": [
+      "4",
+      "A",
+      "B",
+      "38",
+      "50",
+      "B",
+      "C",
+      "B",
+      "C",
+      "A",
+      "B",
+      "4",
+      "A",
+      "B",
+      "3"
+    ]
+  },
+  {
+    "name": "Golden Potum (8M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "dye": [
+      "A",
+      "A",
+      "B",
+      "75",
+      "A",
+      "67",
+      "C",
+      "81",
+      "C",
+      "A",
+      "B",
+      "78",
+      "47",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (10M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "dye": [
+      "5",
+      "A",
+      "48",
+      "C",
+      "A",
+      "B",
+      "48",
+      "B",
+      "C",
+      "64",
+      "B",
+      "C",
+      "A",
+      "63",
+      "C"
+    ]
+  },
+  {
+    "name": "Silver Coryn (2021)",
+    "level": 100,
+    "type": "-",
+    "hp": 100,
+    "element": "Neutral",
+    "exp": 1,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "A",
+      "73",
+      "C",
+      "B",
+      "82",
+      "A",
+      "83",
+      "C",
+      "73",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2017)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "dye": [
+      "A",
+      "B",
+      "5",
+      "A",
+      "B",
+      "C",
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (8M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "dye": [
+      "A",
+      "A",
+      "B",
+      "65",
+      "51",
+      "B",
+      "C",
+      "48",
+      "C",
+      "A",
+      "B",
+      "46",
+      "A",
+      "84",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (10M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "dye": [
+      "A",
+      "A",
+      "47",
+      "C",
+      "A",
+      "B",
+      "47",
+      "50",
+      "C",
+      "A",
+      "B",
+      "50",
+      "A",
+      "B",
+      "62"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2018)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "50",
+      "B",
+      "C",
+      "B",
+      "42",
+      "1",
+      "B",
+      "C",
+      "A",
+      "1",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (8M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "dye": [
+      "82",
+      "A",
+      "B",
+      "84",
+      "A",
+      "B",
+      "63",
+      "B",
+      "C",
+      "48",
+      "B",
+      "C",
+      "A",
+      "83",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (10M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "dye": [
+      "A",
+      "A",
+      "B",
+      "54",
+      "A",
+      "11",
+      "C",
+      "62",
+      "C",
+      "A",
+      "84",
+      "C",
+      "54",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2018)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "A",
+      "5",
+      "C",
+      "B",
+      "5",
+      "A",
+      "B",
+      "38",
+      "A",
+      "42",
+      "C"
+    ]
+  },
+  {
+    "name": "Silver Coryn (2021)",
+    "level": 100,
+    "type": "-",
+    "hp": 100,
+    "element": "Neutral",
+    "exp": 1,
+    "tamable": false,
+    "spawn": {
+      "map": "Tolbas GrassLand",
+      "link": "https://coryn.club/map.php?id=248"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "5",
+      "74",
+      "B",
+      "C",
+      "B",
+      "C",
+      "A",
+      "5",
+      "C",
+      "A",
+      "B",
+      "5"
+    ]
+  },
+  {
+    "name": "Golden Potum (10M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "dye": [
+      "A",
+      "47",
+      "B",
+      "C",
+      "A",
+      "85",
+      "C",
+      "B",
+      "5",
+      "A",
+      "B",
+      "63",
+      "62",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2018)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "A",
+      "B",
+      "5",
+      "5",
+      "C",
+      "A",
+      "38",
+      "C",
+      "42",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Silver Coryn (2021)",
+    "level": 100,
+    "type": "-",
+    "hp": 100,
+    "element": "Neutral",
+    "exp": 1,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "54",
+      "1",
+      "B",
+      "C",
+      "B",
+      "C",
+      "A",
+      "54",
+      "C",
+      "A",
+      "B",
+      "54"
+    ]
+  },
+  {
+    "name": "Golden Potum (6M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "dye": [
+      "54",
+      "A",
+      "53",
+      "C",
+      "A",
+      "50",
+      "C",
+      "B",
+      "C",
+      "A",
+      "54",
+      "C",
+      "A",
+      "B",
+      "2"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2018)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "5",
+      "5",
+      "B",
+      "C",
+      "B",
+      "C",
+      "38",
+      "B",
+      "C",
+      "A",
+      "B",
+      "1"
+    ]
+  },
+  {
+    "name": "Silver Coryn (2021)",
+    "level": 100,
+    "type": "-",
+    "hp": 100,
+    "element": "Neutral",
+    "exp": 1,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "67",
+      "21",
+      "B",
+      "C",
+      "B",
+      "C",
+      "A",
+      "67",
+      "C",
+      "A",
+      "B",
+      "67"
+    ]
+  },
+  {
+    "name": "Golden Potum (6M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "dye": [
+      "A",
+      "A",
+      "2",
+      "C",
+      "82",
+      "B",
+      "C",
+      "4",
+      "C",
+      "3",
+      "B",
+      "C",
+      "2",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (12M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Tolbas GrassLand",
+      "link": "https://coryn.club/map.php?id=248"
+    }
+  },
+  {
+    "name": "Golden Potum (11M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Tolbas GrassLand",
+      "link": "https://coryn.club/map.php?id=248"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita VI",
+        "link": "https://coryn.club/item.php?id=3108"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Super Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1120"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Hyper Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1978"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Refinement Powder",
+        "link": "https://coryn.club/item.php?id=366"
+      }
+    ],
+    "dye": [
+      "84",
+      "48",
+      "34"
+    ]
+  },
+  {
+    "name": "Golden Potum (5M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "dye": [
+      "A",
+      "A",
+      "21",
+      "C",
+      "49",
+      "B",
+      "C",
+      "5",
+      "C",
+      "71",
+      "B",
+      "C",
+      "A",
+      "19",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (12M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    }
+  },
+  {
+    "name": "Golden Potum (7M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita V",
+        "link": "https://coryn.club/item.php?id=1716"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Hyper Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1978"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Refinement Powder",
+        "link": "https://coryn.club/item.php?id=366"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Super Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1120"
+      }
+    ],
+    "dye": [
+      "A",
+      "46",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (5M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "dye": [
+      "A",
+      "A",
+      "B",
+      "1",
+      "63",
+      "B",
+      "C",
+      "B",
+      "C",
+      "A",
+      "B",
+      "C",
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (12M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    }
+  },
+  {
+    "name": "Golden Potum (11M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita V",
+        "link": "https://coryn.club/item.php?id=1716"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Hyper Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1978"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Refinement Powder",
+        "link": "https://coryn.club/item.php?id=366"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Super Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1120"
+      }
+    ],
+    "dye": [
+      "48",
+      "46",
+      "84"
+    ]
+  },
+  {
+    "name": "Golden Potum (5M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "dye": [
+      "5",
+      "21",
+      "B",
+      "C",
+      "A",
+      "5",
+      "C",
+      "B",
+      "C",
+      "A",
+      "44",
+      "C",
+      "A",
+      "28",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (12M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    }
+  },
+  {
+    "name": "Golden Potum (11M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita IV",
+        "link": "https://coryn.club/item.php?id=902"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Super Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1120"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Hyper Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1978"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Refinement Powder",
+        "link": "https://coryn.club/item.php?id=366"
+      }
+    ],
+    "dye": [
+      "34",
+      "18",
+      "2"
+    ]
+  },
+  {
+    "name": "Golden Potum (7M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita II",
+        "link": "https://coryn.club/item.php?id=588"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Super Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1120"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Hyper Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1978"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Refinement Powder",
+        "link": "https://coryn.club/item.php?id=366"
+      }
+    ],
+    "dye": [
+      "5",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (12M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "dye": [
+      "7",
+      "7",
+      "7"
+    ]
+  },
+  {
+    "name": "Golden Potum (11M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita III",
+        "link": "https://coryn.club/item.php?id=589"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Super Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1120"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Hyper Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1978"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Refinement Powder",
+        "link": "https://coryn.club/item.php?id=366"
+      }
+    ],
+    "dye": [
+      "83",
+      "50",
+      "51"
+    ]
+  },
+  {
+    "name": "Golden Potum (7M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita III",
+        "link": "https://coryn.club/item.php?id=589"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Super Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1120"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Hyper Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1978"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Refinement Powder",
+        "link": "https://coryn.club/item.php?id=366"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "5"
+    ]
+  },
+  {
+    "name": "Golden Potum (5M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "dye": [
+      "A",
+      "1",
+      "B",
+      "C",
+      "A",
+      "49",
+      "C",
+      "B",
+      "5",
+      "19",
+      "B",
+      "C",
+      "A",
+      "38",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Potum (11M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita II",
+        "link": "https://coryn.club/item.php?id=588"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Hyper Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1978"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Refinement Powder",
+        "link": "https://coryn.club/item.php?id=366"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Super Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1120"
+      }
+    ],
+    "dye": [
+      "50",
+      "51",
+      "83"
+    ]
+  },
+  {
+    "name": "Golden Potum (7M DL)",
+    "level": 100,
+    "type": "-",
+    "hp": 30,
+    "element": "Light",
+    "exp": 100,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Revita IV",
+        "link": "https://coryn.club/item.php?id=902"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Super Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1120"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Hyper Refinement Powder",
+        "link": "https://coryn.club/item.php?id=1978"
+      },
+      {
+        "category": "Refinement Support",
+        "name": "Refinement Powder",
+        "link": "https://coryn.club/item.php?id=366"
+      }
+    ],
+    "dye": [
+      "A",
+      "5",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2019)",
+    "level": 100,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "A",
+      "B",
+      "5",
+      "21",
+      "C",
+      "A",
+      "B",
+      "25",
+      "1",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Persimmon Coryn",
+    "level": 100,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": "Unknown",
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Dried Persimon",
+        "link": "https://coryn.club/item.php?id=1427"
+      },
+      {
+        "category": "Usable",
+        "name": "Salt-Grilled Saury",
+        "link": "https://coryn.club/item.php?id=1429"
+      },
+      {
+        "category": "Usable",
+        "name": "Matsutake Soup",
+        "link": "https://coryn.club/item.php?id=1431"
+      },
+      {
+        "category": "Usable",
+        "name": "Baked Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1428"
+      },
+      {
+        "category": "Usable",
+        "name": "Mashed Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1430"
+      }
+    ]
+  },
+  {
+    "name": "Golden Coryn (2019)",
+    "level": 101,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "5",
+      "A",
+      "B",
+      "61",
+      "B",
+      "C",
+      "A",
+      "28",
+      "C",
+      "A",
+      "B",
+      "21"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2019)",
+    "level": 102,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "A",
+      "5",
+      "C",
+      "B",
+      "5",
+      "28",
+      "B",
+      "C",
+      "A",
+      "25",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2019)",
+    "level": 103,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "5",
+      "B",
+      "C",
+      "B",
+      "28",
+      "25",
+      "B",
+      "C",
+      "A",
+      "1",
+      "C"
+    ]
+  },
+  {
+    "name": "Don Yeti",
+    "level": 103,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 9482,
+    "tamable": false,
+    "spawn": {
+      "map": "Polde Ice Valley",
+      "link": "https://coryn.club/map.php?id=131"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Cold Wood Stick",
+        "link": "https://coryn.club/item.php?id=1577"
+      },
+      {
+        "category": "Material",
+        "name": "Cracked Big Axe",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Thick Fur",
+        "link": "https://coryn.club/item.php?id=1563"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2019)",
+    "level": 104,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Tolbas GrassLand",
+      "link": "https://coryn.club/map.php?id=248"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "61",
+      "B",
+      "C",
+      "5",
+      "C",
+      "21",
+      "B",
+      "C",
+      "A",
+      "B",
+      "1"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2020)",
+    "level": 105,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Rakau Plains",
+      "link": "https://coryn.club/map.php?id=7"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "A",
+      "B",
+      "5",
+      "21",
+      "C",
+      "A",
+      "B",
+      "25",
+      "1",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2020)",
+    "level": 106,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Yorl Highlands",
+      "link": "https://coryn.club/map.php?id=51"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "5",
+      "A",
+      "B",
+      "61",
+      "B",
+      "C",
+      "A",
+      "28",
+      "C",
+      "A",
+      "B",
+      "21"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2020)",
+    "level": 107,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Darkanon Plain",
+      "link": "https://coryn.club/map.php?id=70"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "A",
+      "5",
+      "C",
+      "B",
+      "5",
+      "28",
+      "B",
+      "C",
+      "A",
+      "25",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2020)",
+    "level": 108,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Wanderer's Plain",
+      "link": "https://coryn.club/map.php?id=110"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "5",
+      "B",
+      "C",
+      "B",
+      "28",
+      "25",
+      "B",
+      "C",
+      "A",
+      "1",
+      "C"
+    ]
+  },
+  {
+    "name": "Golden Coryn (2020)",
+    "level": 109,
+    "type": "-",
+    "hp": 10000,
+    "element": "Neutral",
+    "exp": 20,
+    "tamable": false,
+    "spawn": {
+      "map": "Tolbas GrassLand",
+      "link": "https://coryn.club/map.php?id=248"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      }
+    ],
+    "dye": [
+      "A",
+      "61",
+      "B",
+      "C",
+      "5",
+      "C",
+      "21",
+      "B",
+      "C",
+      "A",
+      "B",
+      "1"
+    ]
+  },
+  {
+    "name": "Nightmare Potum",
+    "level": 120,
+    "type": "-",
+    "hp": 1500000,
+    "element": "Dark",
+    "exp": 15800,
+    "tamable": false,
+    "spawn": {
+      "map": "Garden of Beginning",
+      "link": "https://coryn.club/map.php?id=137"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Purification Salt",
+        "link": "https://coryn.club/item.php?id=1760"
+      },
+      {
+        "category": "Material",
+        "name": "Potum's Soul",
+        "link": "https://coryn.club/item.php?id=1720"
+      },
+      {
+        "category": "Material",
+        "name": "Filthy Bandage",
+        "link": "https://coryn.club/item.php?id=1504"
+      }
+    ],
+    "dye": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Daddy Finpen",
+    "level": 123,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 8000,
+    "tamable": false,
+    "spawn": {
+      "map": "Spring of Rebirth: Middle",
+      "link": "https://coryn.club/map.php?id=139"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Yellow Beak",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Clean Water",
+        "link": "https://coryn.club/item.php?id=1762"
+      },
+      {
+        "category": "Material",
+        "name": "Daddy Soul",
+        "link": "https://coryn.club/item.php?id=1763"
+      }
+    ],
+    "dye": [
+      "12",
+      "29",
+      "C"
+    ]
+  },
+  {
+    "name": "Lapin The Necromancer",
+    "level": 124,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Neutral",
+    "exp": 17222,
+    "tamable": false,
+    "spawn": {
+      "map": "Trace of Dark River",
+      "link": "https://coryn.club/map.php?id=147"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Soft Paw",
+        "link": "https://coryn.club/item.php?id=1902"
+      },
+      {
+        "category": "Material",
+        "name": "Torn Robe",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Cracked Skull",
+        "link": "https://coryn.club/item.php?id=1871"
+      }
+    ],
+    "dye": [
+      "77",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "name": "Persimmon Coryn",
+    "level": 125,
+    "type": "-",
+    "hp": 5000,
+    "element": "Unknown",
+    "exp": 1410,
+    "tamable": false,
+    "spawn": {
+      "map": "Tolbas GrassLand",
+      "link": "https://coryn.club/map.php?id=248"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Baked Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1428"
+      },
+      {
+        "category": "Usable",
+        "name": "Mashed Sweet Potato",
+        "link": "https://coryn.club/item.php?id=1430"
+      },
+      {
+        "category": "Usable",
+        "name": "Ginkgo Nut Rice",
+        "link": "https://coryn.club/item.php?id=1432"
+      },
+      {
+        "category": "Usable",
+        "name": "Dried Persimon",
+        "link": "https://coryn.club/item.php?id=1427"
+      },
+      {
+        "category": "Usable",
+        "name": "Salt-Grilled Saury",
+        "link": "https://coryn.club/item.php?id=1429"
+      }
+    ]
+  },
+  {
+    "name": "Corroded Knight Captain",
+    "level": 128,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 8738,
+    "tamable": false,
+    "spawn": {
+      "map": "Dark Manor: Area 1",
+      "link": "https://coryn.club/map.php?id=153"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Stimulant",
+        "link": "https://coryn.club/item.php?id=1948"
+      },
+      {
+        "category": "Material",
+        "name": "Sharp Shield Bit",
+        "link": "https://coryn.club/item.php?id=1988"
+      },
+      {
+        "category": "Material",
+        "name": "Torn Captain Crest",
+        "link": "https://coryn.club/item.php?id=1947"
+      }
+    ]
+  },
+  {
+    "name": "Salamander",
+    "level": 132,
+    "type": "-",
+    "hp": 2000000,
+    "element": "Fire",
+    "exp": 20242,
+    "tamable": false,
+    "spawn": {
+      "map": "Blazing Graben: Upper",
+      "link": "https://coryn.club/map.php?id=165"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Scorching Orange",
+        "link": "https://coryn.club/item.php?id=2079"
+      },
+      {
+        "category": "Material",
+        "name": "Heated Sword Fin",
+        "link": "https://coryn.club/item.php?id=2127"
+      },
+      {
+        "category": "Material",
+        "name": "Scorching Scale",
+        "link": "https://coryn.club/item.php?id=2078"
+      }
+    ]
+  },
+  {
+    "name": "Evil Magic Sword",
+    "level": 134,
+    "type": "-",
+    "hp": 30,
+    "element": "Dark",
+    "exp": 19123,
+    "tamable": false,
+    "spawn": {
+      "map": "Singolare Ruins: 2nd Floor",
+      "link": "https://coryn.club/map.php?id=170"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Evil Blade",
+        "link": "https://coryn.club/item.php?id=2285"
+      },
+      {
+        "category": "Material",
+        "name": "Greatly Evil Blade",
+        "link": "https://coryn.club/item.php?id=2301"
+      },
+      {
+        "category": "Material",
+        "name": "Crooked Blade",
+        "link": "https://coryn.club/item.php?id=2284"
+      }
+    ]
+  },
+  {
+    "name": "Builder Golem",
+    "level": 138,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Neutral",
+    "exp": 17564,
+    "tamable": false,
+    "spawn": {
+      "map": "Huge Crysta Factory: 3rd Floor",
+      "link": "https://coryn.club/map.php?id=175"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Strange Tool Box",
+        "link": "https://coryn.club/item.php?id=2332"
+      },
+      {
+        "category": "Material",
+        "name": "Cracked Lense",
+        "link": "https://coryn.club/item.php?id=2331"
+      },
+      {
+        "category": "Material",
+        "name": "Mysterious Magic Lantern",
+        "link": "https://coryn.club/item.php?id=2356"
+      },
+      {
+        "category": "Material",
+        "name": "Rusted Iron Plate",
+        "link": "https://coryn.club/item.php?id=2329"
+      }
+    ]
+  },
+  {
+    "name": "Dusk Machina",
+    "level": 142,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 17338,
+    "tamable": false,
+    "spawn": {
+      "map": "Small Demi Machina Factory: Area 2",
+      "link": "https://coryn.club/map.php?id=181"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Giant Hand Print",
+        "link": "https://coryn.club/item.php?id=2412"
+      },
+      {
+        "category": "Material",
+        "name": "Monster's Big Arm",
+        "link": "https://coryn.club/item.php?id=2411"
+      },
+      {
+        "category": "Material",
+        "name": "Crimson Huge Bone",
+        "link": "https://coryn.club/item.php?id=2422"
+      }
+    ]
+  },
+  {
+    "name": "Odelon Machina",
+    "level": 146,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 21357,
+    "tamable": false,
+    "spawn": {
+      "map": "Large Demi Machina Factory: Area 2",
+      "link": "https://coryn.club/map.php?id=186"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Tough Tentacle",
+        "link": "https://coryn.club/item.php?id=2458"
+      },
+      {
+        "category": "Material",
+        "name": "Strange Skin",
+        "link": "https://coryn.club/item.php?id=2447"
+      },
+      {
+        "category": "Material",
+        "name": "Huge Eyeball",
+        "link": "https://coryn.club/item.php?id=2446"
+      },
+      {
+        "category": "Material",
+        "name": "Magic Lens",
+        "link": "https://coryn.club/item.php?id=2448"
+      }
+    ]
+  },
+  {
+    "name": "Super Death Mushroom",
+    "level": 150,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 24871,
+    "tamable": false,
+    "spawn": {
+      "map": "Monster's Forest: Animal Trail",
+      "link": "https://coryn.club/map.php?id=200"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Mysterious Mushroom",
+        "link": "https://coryn.club/item.php?id=2586"
+      },
+      {
+        "category": "Usable",
+        "name": "Death Truffle",
+        "link": "https://coryn.club/item.php?id=2613"
+      },
+      {
+        "category": "Material",
+        "name": "Mushroom Venom",
+        "link": "https://coryn.club/item.php?id=436"
+      }
+    ],
+    "dye": [
+      "A",
+      "69",
+      "C"
+    ]
+  },
+  {
+    "name": "Commander Golem",
+    "level": 154,
+    "type": "-",
+    "hp": 2400000,
+    "element": "Dark",
+    "exp": 20580,
+    "tamable": false,
+    "spawn": {
+      "map": "Lufenas Mansion: Entrance",
+      "link": "https://coryn.club/map.php?id=208"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Crimson Loincloth",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Command Radar",
+        "link": "https://coryn.club/item.php?id=2654"
+      },
+      {
+        "category": "Material",
+        "name": "Hard Glass",
+        "link": "https://coryn.club/item.php?id=2657"
+      }
+    ],
+    "dye": [
+      "A",
+      "22",
+      "38"
+    ]
+  },
+  {
+    "name": "Lyark Master Specialist",
+    "level": 157,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Wind",
+    "exp": 19089,
+    "tamable": false,
+    "spawn": {
+      "map": "Brahe Laboratory: 2nd Building",
+      "link": "https://coryn.club/map.php?id=215"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Lyark Tranquilizer",
+        "link": "https://coryn.club/item.php?id=2744"
+      },
+      {
+        "category": "Material",
+        "name": "Ox Fabric",
+        "link": "https://coryn.club/item.php?id=2743"
+      },
+      {
+        "category": "Material",
+        "name": "Soldier Leader's Badge",
+        "link": "https://coryn.club/item.php?id=2835"
+      }
+    ]
+  },
+  {
+    "name": "Amoeba Machina",
+    "level": 158,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 29000,
+    "tamable": false,
+    "spawn": {
+      "map": "Ultimea Sewer: Southeast",
+      "link": "https://coryn.club/map.php?id=213"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Mysterious Cube",
+        "link": "https://coryn.club/item.php?id=3171"
+      },
+      {
+        "category": "Material",
+        "name": "Soft Swollen Nail",
+        "link": "https://coryn.club/item.php?id=3169"
+      },
+      {
+        "category": "Material",
+        "name": "Crooked Nucleic Acid",
+        "link": "https://coryn.club/item.php?id=3168"
+      }
+    ]
+  },
+  {
+    "name": "Volotur",
+    "level": 160,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 24024,
+    "tamable": false,
+    "spawn": {
+      "map": "Suburb of Droma Square: Area 3",
+      "link": "https://coryn.club/map.php?id=232"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Biting Head",
+        "link": "https://coryn.club/item.php?id=2892"
+      },
+      {
+        "category": "Material",
+        "name": "Spiky Fang",
+        "link": "https://coryn.club/item.php?id=2888"
+      },
+      {
+        "category": "Material",
+        "name": "Cursed Secret Soul",
+        "link": "https://coryn.club/item.php?id=2887"
+      }
+    ]
+  },
+  {
+    "name": "Wandering Wheel",
+    "level": 163,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Wind",
+    "exp": 20223,
+    "tamable": false,
+    "spawn": {
+      "map": "Ultimea Palace: Demi Machina Storage",
+      "link": "https://coryn.club/map.php?id=236"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Heavy Wheel",
+        "link": "https://coryn.club/item.php?id=436"
+      },
+      {
+        "category": "Material",
+        "name": "Magic Engine",
+        "link": "https://coryn.club/item.php?id=2941"
+      },
+      {
+        "category": "Material",
+        "name": "Sticky Wax",
+        "link": "https://coryn.club/item.php?id=2944"
+      }
+    ],
+    "dye": [
+      "83",
+      "B",
+      "69"
+    ]
+  },
+  {
+    "name": "Seraph Machina",
+    "level": 167,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 21073,
+    "tamable": false,
+    "spawn": {
+      "map": "Buried Tower: Inside",
+      "link": "https://coryn.club/map.php?id=246"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Light Emitting Cloth",
+        "link": "https://coryn.club/item.php?id=3186"
+      },
+      {
+        "category": "Material",
+        "name": "Broken Magic Device",
+        "link": "https://coryn.club/item.php?id=3185"
+      },
+      {
+        "category": "Material",
+        "name": "Angel Heart",
+        "link": "https://coryn.club/item.php?id=3187"
+      }
+    ]
+  },
+  {
+    "name": "Solopy",
+    "level": 169,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 23835,
+    "tamable": false,
+    "spawn": {
+      "map": "Turnus Mine: Area 3",
+      "link": "https://coryn.club/map.php?id=251"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Tweed Fabric",
+        "link": "https://coryn.club/item.php?id=3218"
+      },
+      {
+        "category": "Material",
+        "name": "Turnus Crystal",
+        "link": "https://coryn.club/item.php?id=3241"
+      },
+      {
+        "category": "Material",
+        "name": "Tasty Mushroom",
+        "link": "https://coryn.club/item.php?id=3233"
+      }
+    ]
+  },
+  {
+    "name": "Fanadon",
+    "level": 171,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Neutral",
+    "exp": 24360,
+    "tamable": false,
+    "spawn": {
+      "map": "Curonne Forest: North Area 2",
+      "link": "https://coryn.club/map.php?id=258"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Lizard Dango",
+        "link": "https://coryn.club/item.php?id=3332"
+      },
+      {
+        "category": "Material",
+        "name": "Split Mask",
+        "link": "https://coryn.club/item.php?id=3331"
+      },
+      {
+        "category": "Material",
+        "name": "Lizard Spirit Stone",
+        "link": "https://coryn.club/item.php?id=3338"
+      }
+    ]
+  },
+  {
+    "name": "Altoblepas",
+    "level": 174,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Neutral",
+    "exp": 27500,
+    "tamable": false,
+    "spawn": {
+      "map": "Rokoko Plains",
+      "link": "https://coryn.club/map.php?id=261"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Cracked Hunting Horn",
+        "link": "https://coryn.club/item.php?id=3476"
+      },
+      {
+        "category": "Material",
+        "name": "Vocal Sac",
+        "link": "https://coryn.club/item.php?id=3403"
+      },
+      {
+        "category": "Material",
+        "name": "Squawker Horn",
+        "link": "https://coryn.club/item.php?id=3402"
+      }
+    ]
+  },
+  {
+    "name": "Bubble Bogey",
+    "level": 177,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Fire",
+    "exp": 26754,
+    "tamable": false,
+    "spawn": {
+      "map": "Barbaros Corridor",
+      "link": "https://coryn.club/map.php?id=275"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Mysterious Shiny Cloth",
+        "link": "https://coryn.club/item.php?id=3604"
+      },
+      {
+        "category": "Material",
+        "name": "Cracked Halo",
+        "link": "https://coryn.club/item.php?id=3587"
+      },
+      {
+        "category": "Material",
+        "name": "Red Fallen Angel Halo",
+        "link": "https://coryn.club/item.php?id=3586"
+      }
+    ]
+  },
+  {
+    "name": "Mithurna Lynx",
+    "level": 177,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 25725,
+    "tamable": false,
+    "spawn": {
+      "map": "Ruins of Mt. Mithurna: Stylobate",
+      "link": "https://coryn.club/map.php?id=272"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Lucid White Spirit Stone",
+        "link": "https://coryn.club/item.php?id=3523"
+      },
+      {
+        "category": "Material",
+        "name": "Lucid White Fur",
+        "link": "https://coryn.club/item.php?id=3522"
+      },
+      {
+        "category": "Material",
+        "name": "Cat Claw",
+        "link": "https://coryn.club/item.php?id=3521"
+      }
+    ]
+  },
+  {
+    "name": "Concert Potum",
+    "level": 180,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Neutral",
+    "exp": 269,
+    "tamable": true,
+    "spawn": {
+      "map": "Pom Taming Land",
+      "link": "https://coryn.club/map.php?id=384"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Hard Apple",
+        "link": "https://coryn.club/item.php?id=252"
+      },
+      {
+        "category": "Usable",
+        "name": "Apple",
+        "link": "https://coryn.club/item.php?id=245"
+      },
+      {
+        "category": "Usable",
+        "name": "Sweet Apple",
+        "link": "https://coryn.club/item.php?id=270"
+      },
+      {
+        "category": "Usable",
+        "name": "Yellow Apple",
+        "link": "https://coryn.club/item.php?id=4441"
+      },
+      {
+        "category": "Material",
+        "name": "Green Apple",
+        "link": "https://coryn.club/item.php?id=1324"
+      }
+    ]
+  },
+  {
+    "name": "Carbuncle",
+    "level": 183,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Fire",
+    "exp": 27200,
+    "tamable": false,
+    "spawn": {
+      "map": "Hall of Construction Gods",
+      "link": "https://coryn.club/map.php?id=282"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Carbuncle Claw",
+        "link": "https://coryn.club/item.php?id=3651"
+      },
+      {
+        "category": "Material",
+        "name": "Carbuncle Fur",
+        "link": "https://coryn.club/item.php?id=3649"
+      },
+      {
+        "category": "Material",
+        "name": "Shining Mirror",
+        "link": "https://coryn.club/item.php?id=3648"
+      }
+    ]
+  },
+  {
+    "name": "Goldenia",
+    "level": 187,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Wind",
+    "exp": 27930,
+    "tamable": false,
+    "spawn": {
+      "map": "Elf Mountains: Area 3",
+      "link": "https://coryn.club/map.php?id=292"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Spiky Horns",
+        "link": "https://coryn.club/item.php?id=3734"
+      },
+      {
+        "category": "Material",
+        "name": "Glossy Black Leather",
+        "link": "https://coryn.club/item.php?id=3733"
+      },
+      {
+        "category": "Material",
+        "name": "Golden Stinging Hair",
+        "link": "https://coryn.club/item.php?id=3740"
+      }
+    ]
+  },
+  {
+    "name": "Thug Golem",
+    "level": 191,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 29190,
+    "tamable": false,
+    "spawn": {
+      "map": "Dark Dragon Shrine: Middle",
+      "link": "https://coryn.club/map.php?id=295"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Shining Monoeye",
+        "link": "https://coryn.club/item.php?id=3797"
+      },
+      {
+        "category": "Material",
+        "name": "Ancient Ingot",
+        "link": "https://coryn.club/item.php?id=3796"
+      },
+      {
+        "category": "Material",
+        "name": "Pancake Ice Flower",
+        "link": "https://coryn.club/item.php?id=3798"
+      }
+    ]
+  },
+  {
+    "name": "Grimuckus",
+    "level": 195,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 30240,
+    "tamable": false,
+    "spawn": {
+      "map": "Wazeero Street",
+      "link": "https://coryn.club/map.php?id=300"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Weird Blob",
+        "link": "https://coryn.club/item.php?id=4060"
+      },
+      {
+        "category": "Material",
+        "name": "Wazeero Stone",
+        "link": "https://coryn.club/item.php?id=4053"
+      },
+      {
+        "category": "Ore",
+        "name": "Mithril Ore",
+        "link": "https://coryn.club/item.php?id=4054"
+      }
+    ]
+  },
+  {
+    "name": "Frenzy Viola",
+    "level": 198,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 42126,
+    "tamable": false,
+    "spawn": {
+      "map": "Morthell Swell: Area 3",
+      "link": "https://coryn.club/map.php?id=309"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Temptation Flower",
+        "link": "https://coryn.club/item.php?id=4118"
+      },
+      {
+        "category": "Material",
+        "name": "Dark Red Fluid",
+        "link": "https://coryn.club/item.php?id=4155"
+      },
+      {
+        "category": "Material",
+        "name": "Mysterious Skull",
+        "link": "https://coryn.club/item.php?id=4117"
+      }
+    ]
+  },
+  {
+    "name": "Teertocrit",
+    "level": 200,
+    "type": "-",
+    "hp": 7050000,
+    "element": "Fire",
+    "exp": 46200,
+    "tamable": false,
+    "spawn": {
+      "map": "Manor of Surprises",
+      "link": "https://coryn.club/map.php?id=427"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Pumpkin Cookie",
+        "link": "https://coryn.club/item.php?id=1490"
+      },
+      {
+        "category": "Usable",
+        "name": "Jack Pudding",
+        "link": "https://coryn.club/item.php?id=1492"
+      },
+      {
+        "category": "Usable",
+        "name": "Pumpkin Candy",
+        "link": "https://coryn.club/item.php?id=1494"
+      },
+      {
+        "category": "Usable",
+        "name": "Pumpkin Soup",
+        "link": "https://coryn.club/item.php?id=1496"
+      },
+      {
+        "category": "Usable",
+        "name": "Flower Nectar (Bouquet)",
+        "link": "https://coryn.club/item.php?id=1440"
+      }
+    ]
+  },
+  {
+    "name": "Radibat",
+    "level": 200,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 44880,
+    "tamable": false,
+    "spawn": {
+      "map": "Zarth's Mansion: Study",
+      "link": "https://coryn.club/map.php?id=313"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Pumpkin Cookie",
+        "link": "https://coryn.club/item.php?id=1490"
+      },
+      {
+        "category": "Usable",
+        "name": "Jack Pudding",
+        "link": "https://coryn.club/item.php?id=1492"
+      },
+      {
+        "category": "Usable",
+        "name": "Pumpkin Candy",
+        "link": "https://coryn.club/item.php?id=1494"
+      },
+      {
+        "category": "Usable",
+        "name": "Pumpkin Soup",
+        "link": "https://coryn.club/item.php?id=1496"
+      },
+      {
+        "category": "Usable",
+        "name": "Flower Nectar (Bouquet)",
+        "link": "https://coryn.club/item.php?id=1440"
+      }
+    ]
+  },
+  {
+    "name": "Armasite",
+    "level": 201,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Fire",
+    "exp": 33330,
+    "tamable": false,
+    "spawn": {
+      "map": "Fractum Sector: Area 1",
+      "link": "https://coryn.club/map.php?id=316"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Corroded Stem",
+        "link": "https://coryn.club/item.php?id=4293"
+      },
+      {
+        "category": "Material",
+        "name": "Mutated Plant Thorn",
+        "link": "https://coryn.club/item.php?id=4292"
+      },
+      {
+        "category": "Material",
+        "name": "Amethyst Flower",
+        "link": "https://coryn.club/item.php?id=4295"
+      }
+    ]
+  },
+  {
+    "name": "Mega Alpoca",
+    "level": 204,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Neutral",
+    "exp": 34100,
+    "tamable": false,
+    "spawn": {
+      "map": "Labilans Sector: Area 3",
+      "link": "https://coryn.club/map.php?id=336"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Smooth Fine Hair",
+        "link": "https://coryn.club/item.php?id=4390"
+      },
+      {
+        "category": "Material",
+        "name": "Alpoca Fur",
+        "link": "https://coryn.club/item.php?id=4387"
+      },
+      {
+        "category": "Ore",
+        "name": "Mithril Ore",
+        "link": "https://coryn.club/item.php?id=4388"
+      }
+    ]
+  },
+  {
+    "name": "Bloodie Crystal",
+    "level": 207,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 34280,
+    "tamable": false,
+    "spawn": {
+      "map": "Avant Plastida: Area 1",
+      "link": "https://coryn.club/map.php?id=340"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Blood Red Gemstone",
+        "link": "https://coryn.club/item.php?id=4465"
+      },
+      {
+        "category": "Material",
+        "name": "Perilous Essence",
+        "link": "https://coryn.club/item.php?id=4450"
+      },
+      {
+        "category": "Material",
+        "name": "Blood Crystal",
+        "link": "https://coryn.club/item.php?id=4466"
+      }
+    ]
+  },
+  {
+    "name": "Gopherga",
+    "level": 207,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 70000,
+    "tamable": false,
+    "spawn": {
+      "map": "Underwater Ruins",
+      "link": "https://coryn.club/map.php?id=368"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Mysterious Clam",
+        "link": "https://coryn.club/item.php?id=4870"
+      },
+      {
+        "category": "Material",
+        "name": "Super Heavy Shell",
+        "link": "https://coryn.club/item.php?id=4871"
+      },
+      {
+        "category": "Ore",
+        "name": "Orichalcum Ore",
+        "link": "https://coryn.club/item.php?id=911"
+      }
+    ]
+  },
+  {
+    "name": "Canemofish",
+    "level": 210,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 39845,
+    "tamable": false,
+    "spawn": {
+      "map": "Recetacula Sector: Area 1",
+      "link": "https://coryn.club/map.php?id=345"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Sharp Fish Fang",
+        "link": "https://coryn.club/item.php?id=4533"
+      },
+      {
+        "category": "Material",
+        "name": "Strong Copper Scale",
+        "link": "https://coryn.club/item.php?id=4525"
+      },
+      {
+        "category": "Material",
+        "name": "Crystal Pouch",
+        "link": "https://coryn.club/item.php?id=4524"
+      }
+    ]
+  },
+  {
+    "name": "Demonic Eye",
+    "level": 212,
+    "type": "-",
+    "hp": 10000000,
+    "element": "Wind",
+    "exp": 75834,
+    "tamable": false,
+    "spawn": {
+      "map": "Dea Ruinea",
+      "link": "https://coryn.club/map.php?id=352"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Cursed Evil Eye",
+        "link": "https://coryn.club/item.php?id=4565"
+      },
+      {
+        "category": "Material",
+        "name": "Bizarre Skin",
+        "link": "https://coryn.club/item.php?id=4564"
+      },
+      {
+        "category": "Material",
+        "name": "Demon Serum",
+        "link": "https://coryn.club/item.php?id=4566"
+      }
+    ]
+  },
+  {
+    "name": "Tardigrademon",
+    "level": 213,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Fire",
+    "exp": 38157,
+    "tamable": false,
+    "spawn": {
+      "map": "Old Lufenas Mansion Ruins",
+      "link": "https://coryn.club/map.php?id=357"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Tardigrande Skin",
+        "link": "https://coryn.club/item.php?id=4604"
+      },
+      {
+        "category": "Material",
+        "name": "Chitinous Crimson Sphere",
+        "link": "https://coryn.club/item.php?id=4611"
+      },
+      {
+        "category": "Material",
+        "name": "Corroded Tail Thorn",
+        "link": "https://coryn.club/item.php?id=4605"
+      }
+    ]
+  },
+  {
+    "name": "Sand Bandits Leader",
+    "level": 215,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 48500,
+    "tamable": false,
+    "spawn": {
+      "map": "Geist Desert: Area 3",
+      "link": "https://coryn.club/map.php?id=365"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Sand Bandits Bandage",
+        "link": "https://coryn.club/item.php?id=4702"
+      },
+      {
+        "category": "Material",
+        "name": "Leader's Hair Accessory",
+        "link": "https://coryn.club/item.php?id=4690"
+      },
+      {
+        "category": "Material",
+        "name": "Blood Stained Billhook",
+        "link": "https://coryn.club/item.php?id=4701"
+      }
+    ]
+  },
+  {
+    "name": "Ageladanios",
+    "level": 218,
+    "type": "-",
+    "hp": 7000000,
+    "element": "Fire",
+    "exp": 34350,
+    "tamable": false,
+    "spawn": {
+      "map": "Ducia Coast: Area 1",
+      "link": "https://coryn.club/map.php?id=376"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Raging Soul",
+        "link": "https://coryn.club/item.php?id=4982"
+      },
+      {
+        "category": "Material",
+        "name": "Evil Spirit Horns",
+        "link": "https://coryn.club/item.php?id=4978"
+      },
+      {
+        "category": "Material",
+        "name": "Flame of Misfortune",
+        "link": "https://coryn.club/item.php?id=4977"
+      }
+    ]
+  },
+  {
+    "name": "Tappler",
+    "level": 218,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 37400,
+    "tamable": false,
+    "spawn": {
+      "map": "Ruins of Urban Elban",
+      "link": "https://coryn.club/map.php?id=370"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Strange Dust",
+        "link": "https://coryn.club/item.php?id=4897"
+      },
+      {
+        "category": "Material",
+        "name": "Glow Pebble",
+        "link": "https://coryn.club/item.php?id=4907"
+      },
+      {
+        "category": "Material",
+        "name": "Geometric Metal Bit",
+        "link": "https://coryn.club/item.php?id=4901"
+      }
+    ]
+  },
+  {
+    "name": "Espectro",
+    "level": 221,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 33600,
+    "tamable": false,
+    "spawn": {
+      "map": "Arche Valley: Area 1",
+      "link": "https://coryn.club/map.php?id=381"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Metal Shackles",
+        "link": "https://coryn.club/item.php?id=5073"
+      },
+      {
+        "category": "Material",
+        "name": "Vengeful Soul",
+        "link": "https://coryn.club/item.php?id=5075"
+      },
+      {
+        "category": "Material",
+        "name": "Skull Mask Fragment",
+        "link": "https://coryn.club/item.php?id=5074"
+      }
+    ]
+  },
+  {
+    "name": "Grim Reaper Scarecrow",
+    "level": 224,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Wind",
+    "exp": 35140,
+    "tamable": false,
+    "spawn": {
+      "map": "Witch's Woods Area 2",
+      "link": "https://coryn.club/map.php?id=390"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Sturdy Core",
+        "link": "https://coryn.club/item.php?id=5268"
+      },
+      {
+        "category": "Material",
+        "name": "Crow Feather",
+        "link": "https://coryn.club/item.php?id=5266"
+      },
+      {
+        "category": "Material",
+        "name": "Scarecrow's Emotion",
+        "link": "https://coryn.club/item.php?id=5265"
+      }
+    ]
+  },
+  {
+    "name": "Melancia",
+    "level": 225,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 55307,
+    "tamable": false,
+    "spawn": {
+      "map": "Phasma Forest: Area 2",
+      "link": "https://coryn.club/map.php?id=488"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Flower Nectar (Bouquet)",
+        "link": "https://coryn.club/item.php?id=1440"
+      },
+      {
+        "category": "Usable",
+        "name": "Grilled Eggplant",
+        "link": "https://coryn.club/item.php?id=6592"
+      },
+      {
+        "category": "Material",
+        "name": "Salad Dressing",
+        "link": "https://coryn.club/item.php?id=6589"
+      }
+    ]
+  },
+  {
+    "name": "Lord of Nezim",
+    "level": 227,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 39200,
+    "tamable": false,
+    "spawn": {
+      "map": "Nezim Wetlands",
+      "link": "https://coryn.club/map.php?id=396"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Powerful Jagged Tooth",
+        "link": "https://coryn.club/item.php?id=5369"
+      },
+      {
+        "category": "Material",
+        "name": "Slimy Hide",
+        "link": "https://coryn.club/item.php?id=5367"
+      },
+      {
+        "category": "Material",
+        "name": "Charred Salamander Meat",
+        "link": "https://coryn.club/item.php?id=5366"
+      }
+    ]
+  },
+  {
+    "name": "Capten Amiya",
+    "level": 227,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 65300,
+    "tamable": false,
+    "spawn": {
+      "map": "Underwater Canyon: Area 3",
+      "link": "https://coryn.club/map.php?id=416"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Sweet Shrimp",
+        "link": "https://coryn.club/item.php?id=5676"
+      },
+      {
+        "category": "Material",
+        "name": "Seabed Crystal Stone",
+        "link": "https://coryn.club/item.php?id=5673"
+      },
+      {
+        "category": "Material",
+        "name": "Lovely Bubble",
+        "link": "https://coryn.club/item.php?id=5687"
+      }
+    ]
+  },
+  {
+    "name": "Trocostida",
+    "level": 230,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 40000,
+    "tamable": false,
+    "spawn": {
+      "map": "Nov Diela Area 1",
+      "link": "https://coryn.club/map.php?id=400"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Energy Bottle EX",
+        "link": "https://coryn.club/item.php?id=5439"
+      },
+      {
+        "category": "Material",
+        "name": "Glowing Liposome",
+        "link": "https://coryn.club/item.php?id=5438"
+      },
+      {
+        "category": "Material",
+        "name": "Wriggling Latebra",
+        "link": "https://coryn.club/item.php?id=5441"
+      }
+    ]
+  },
+  {
+    "name": "Rhinosaur",
+    "level": 233,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 41000,
+    "tamable": false,
+    "spawn": {
+      "map": "Fugitive Lake Swamp: Area 3",
+      "link": "https://coryn.club/map.php?id=411"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Hard Armor Skin",
+        "link": "https://coryn.club/item.php?id=5508"
+      },
+      {
+        "category": "Material",
+        "name": "Adamantite Horn",
+        "link": "https://coryn.club/item.php?id=5515"
+      },
+      {
+        "category": "Material",
+        "name": "Bold Gaze",
+        "link": "https://coryn.club/item.php?id=5509"
+      }
+    ]
+  },
+  {
+    "name": "Arbogazella",
+    "level": 236,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Wind",
+    "exp": 41820,
+    "tamable": false,
+    "spawn": {
+      "map": "Guardian Forest: Lost Woods",
+      "link": "https://coryn.club/map.php?id=419"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Star Fruit",
+        "link": "https://coryn.club/item.php?id=5707"
+      },
+      {
+        "category": "Material",
+        "name": "Sharp Wooden Horn",
+        "link": "https://coryn.club/item.php?id=5717"
+      },
+      {
+        "category": "Material",
+        "name": "Sacred Forest Sound",
+        "link": "https://coryn.club/item.php?id=5706"
+      }
+    ]
+  },
+  {
+    "name": "Bullamius",
+    "level": 239,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 42800,
+    "tamable": false,
+    "spawn": {
+      "map": "Storage Yard: Area 2",
+      "link": "https://coryn.club/map.php?id=424"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Monkey Energy",
+        "link": "https://coryn.club/item.php?id=5792"
+      },
+      {
+        "category": "Material",
+        "name": "Sharp Monkey Horn",
+        "link": "https://coryn.club/item.php?id=5794"
+      },
+      {
+        "category": "Material",
+        "name": "Monkey Fang",
+        "link": "https://coryn.club/item.php?id=5789"
+      }
+    ]
+  },
+  {
+    "name": "Gordo",
+    "level": 242,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Light",
+    "exp": 43700,
+    "tamable": false,
+    "spawn": {
+      "map": "Eumano Glade",
+      "link": "https://coryn.club/map.php?id=451"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Cracked Acorn Hat",
+        "link": "https://coryn.club/item.php?id=5955"
+      },
+      {
+        "category": "Material",
+        "name": "Huge Acorn",
+        "link": "https://coryn.club/item.php?id=5954"
+      },
+      {
+        "category": "Material",
+        "name": "Dream Fragment",
+        "link": "https://coryn.club/item.php?id=5956"
+      }
+    ]
+  },
+  {
+    "name": "Blazingur",
+    "level": 245,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Fire",
+    "exp": 43740,
+    "tamable": false,
+    "spawn": {
+      "map": "Divido Valley: Area 3",
+      "link": "https://coryn.club/map.php?id=459"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Red Claw",
+        "link": "https://coryn.club/item.php?id=6050"
+      },
+      {
+        "category": "Material",
+        "name": "Bloody Stone",
+        "link": "https://coryn.club/item.php?id=6046"
+      },
+      {
+        "category": "Material",
+        "name": "Blazing Mane",
+        "link": "https://coryn.club/item.php?id=6048"
+      }
+    ]
+  },
+  {
+    "name": "Glaucius",
+    "level": 248,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 44670,
+    "tamable": false,
+    "spawn": {
+      "map": "Arstida: Area 2",
+      "link": "https://coryn.club/map.php?id=463"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Strange Claw",
+        "link": "https://coryn.club/item.php?id=6127"
+      },
+      {
+        "category": "Material",
+        "name": "Mutated Sphere Core",
+        "link": "https://coryn.club/item.php?id=6134"
+      },
+      {
+        "category": "Material",
+        "name": "Dangerous Cnidoblast",
+        "link": "https://coryn.club/item.php?id=6128"
+      }
+    ]
+  },
+  {
+    "name": "Illuminitor",
+    "level": 250,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 45300,
+    "tamable": false,
+    "spawn": {
+      "map": "Illuminare City: Route 1 (210-230)",
+      "link": "https://coryn.club/map.php?id=505"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Silver Star Ornament",
+        "link": "https://coryn.club/item.php?id=6750"
+      },
+      {
+        "category": "Material",
+        "name": "Cold Scrap",
+        "link": "https://coryn.club/item.php?id=6749"
+      },
+      {
+        "category": "Ore",
+        "name": "Mithril Ore",
+        "link": "https://coryn.club/item.php?id=816"
+      }
+    ]
+  },
+  {
+    "name": "Kuffania",
+    "level": 250,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 55900,
+    "tamable": false,
+    "spawn": {
+      "map": "Risus Valley: Area 2",
+      "link": "https://coryn.club/map.php?id=547"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Bat Candy",
+        "link": "https://coryn.club/item.php?id=7374"
+      },
+      {
+        "category": "Usable",
+        "name": "Battie Scone",
+        "link": "https://coryn.club/item.php?id=7375"
+      },
+      {
+        "category": "Material",
+        "name": "Poison Blood",
+        "link": "https://coryn.club/item.php?id=7377"
+      }
+    ]
+  },
+  {
+    "name": "Ignitrus",
+    "level": 251,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Fire",
+    "exp": 49022,
+    "tamable": false,
+    "spawn": {
+      "map": "Vulcani Crater Base",
+      "link": "https://coryn.club/map.php?id=470"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Vulcani Stone",
+        "link": "https://coryn.club/item.php?id=6209"
+      },
+      {
+        "category": "Material",
+        "name": "Burning Desire",
+        "link": "https://coryn.club/item.php?id=6216"
+      },
+      {
+        "category": "Material",
+        "name": "Rhyolite",
+        "link": "https://coryn.club/item.php?id=6210"
+      }
+    ]
+  },
+  {
+    "name": "Rampion",
+    "level": 254,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 45540,
+    "tamable": false,
+    "spawn": {
+      "map": "Milcaska Falls: Army Base",
+      "link": "https://coryn.club/map.php?id=474"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Bone Scissors",
+        "link": "https://coryn.club/item.php?id=6279"
+      },
+      {
+        "category": "Material",
+        "name": "Devil's Skull",
+        "link": "https://coryn.club/item.php?id=6300"
+      },
+      {
+        "category": "Material",
+        "name": "Poison Crystal Tail",
+        "link": "https://coryn.club/item.php?id=6280"
+      }
+    ]
+  },
+  {
+    "name": "Wolkissa",
+    "level": 257,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 40800,
+    "tamable": false,
+    "spawn": {
+      "map": "Weredragon's Throat",
+      "link": "https://coryn.club/map.php?id=477"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Cloud Cat Horn",
+        "link": "https://coryn.club/item.php?id=6342"
+      },
+      {
+        "category": "Material",
+        "name": "Cloudbow Light",
+        "link": "https://coryn.club/item.php?id=6334"
+      },
+      {
+        "category": "Material",
+        "name": "Fleecy Cloud",
+        "link": "https://coryn.club/item.php?id=6341"
+      }
+    ]
+  },
+  {
+    "name": "Galegon",
+    "level": 260,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Wind",
+    "exp": 42627,
+    "tamable": false,
+    "spawn": {
+      "map": "Boma Moja: Area 3",
+      "link": "https://coryn.club/map.php?id=483"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Flying Dragon Wing",
+        "link": "https://coryn.club/item.php?id=6534"
+      },
+      {
+        "category": "Material",
+        "name": "Endless Storm",
+        "link": "https://coryn.club/item.php?id=6545"
+      },
+      {
+        "category": "Material",
+        "name": "Flying Dragon Heart",
+        "link": "https://coryn.club/item.php?id=6535"
+      }
+    ]
+  },
+  {
+    "name": "Brassozard",
+    "level": 263,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Earth",
+    "exp": 42200,
+    "tamable": false,
+    "spawn": {
+      "map": "Operation Zone: Climate Control Area",
+      "link": "https://coryn.club/map.php?id=493"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Brassozard Claw",
+        "link": "https://coryn.club/item.php?id=6642"
+      },
+      {
+        "category": "Material",
+        "name": "Wyvern Horn",
+        "link": "https://coryn.club/item.php?id=6641"
+      },
+      {
+        "category": "Ore",
+        "name": "Damascus Ore",
+        "link": "https://coryn.club/item.php?id=6626"
+      }
+    ]
+  },
+  {
+    "name": "Exdocus",
+    "level": 266,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 50286,
+    "tamable": false,
+    "spawn": {
+      "map": "Stairway to Vital Point",
+      "link": "https://coryn.club/map.php?id=495"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Solid Vertebra",
+        "link": "https://coryn.club/item.php?id=6684"
+      },
+      {
+        "category": "Material",
+        "name": "Strange Eye",
+        "link": "https://coryn.club/item.php?id=6691"
+      },
+      {
+        "category": "Material",
+        "name": "Stairway Pebble",
+        "link": "https://coryn.club/item.php?id=6685"
+      }
+    ]
+  },
+  {
+    "name": "Trus",
+    "level": 269,
+    "type": "-",
+    "hp": 12800000,
+    "element": "Fire",
+    "exp": 98000,
+    "tamable": false,
+    "spawn": {
+      "map": "Propulsion System Zone: Power Tank",
+      "link": "https://coryn.club/map.php?id=517"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Small Wing",
+        "link": "https://coryn.club/item.php?id=6949"
+      },
+      {
+        "category": "Material",
+        "name": "Scorching Core",
+        "link": "https://coryn.club/item.php?id=6955"
+      },
+      {
+        "category": "Material",
+        "name": "Hot Glass",
+        "link": "https://coryn.club/item.php?id=6950"
+      }
+    ]
+  },
+  {
+    "name": "Diark",
+    "level": 270,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Dark",
+    "exp": 63800,
+    "tamable": false,
+    "spawn": {
+      "map": "Tower of Clamor: Area 3 (230-234)",
+      "link": "https://coryn.club/map.php?id=634"
+    }
+  },
+  {
+    "name": "Orictoceras",
+    "level": 272,
+    "type": "-",
+    "hp": 13500000,
+    "element": "Earth",
+    "exp": 51200,
+    "tamable": false,
+    "spawn": {
+      "map": "Kabla Jabali",
+      "link": "https://coryn.club/map.php?id=519"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Growing Ore",
+        "link": "https://coryn.club/item.php?id=6993"
+      },
+      {
+        "category": "Material",
+        "name": "Stone Sternal Bone",
+        "link": "https://coryn.club/item.php?id=7000"
+      },
+      {
+        "category": "Material",
+        "name": "Deadly Claw",
+        "link": "https://coryn.club/item.php?id=6994"
+      }
+    ]
+  },
+  {
+    "name": "Charugon",
+    "level": 275,
+    "type": "-",
+    "hp": 19100000,
+    "element": "Fire",
+    "exp": 76600,
+    "tamable": false,
+    "spawn": {
+      "map": "Boma Konda: Underground Area",
+      "link": "https://coryn.club/map.php?id=525"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Hot Dragon Scale",
+        "link": "https://coryn.club/item.php?id=7044"
+      },
+      {
+        "category": "Material",
+        "name": "Inferno Sac",
+        "link": "https://coryn.club/item.php?id=7036"
+      },
+      {
+        "category": "Material",
+        "name": "Burnt Wood Board",
+        "link": "https://coryn.club/item.php?id=7043"
+      }
+    ]
+  },
+  {
+    "name": "Lilicarolla",
+    "level": 278,
+    "type": "-",
+    "hp": 14480000,
+    "element": "Dark",
+    "exp": 57750,
+    "tamable": false,
+    "spawn": {
+      "map": "Frozen Falls: Area 1",
+      "link": "https://coryn.club/map.php?id=529"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Geometric Petal",
+        "link": "https://coryn.club/item.php?id=7103"
+      },
+      {
+        "category": "Material",
+        "name": "Hexagonal Crystal",
+        "link": "https://coryn.club/item.php?id=7114"
+      },
+      {
+        "category": "Material",
+        "name": "Strange Needle Arm",
+        "link": "https://coryn.club/item.php?id=7104"
+      }
+    ]
+  },
+  {
+    "name": "Vodre",
+    "level": 281,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 67680,
+    "tamable": false,
+    "spawn": {
+      "map": "Puerta Islands: Area 2",
+      "link": "https://coryn.club/map.php?id=535"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Moist Thin Fin",
+        "link": "https://coryn.club/item.php?id=7158"
+      },
+      {
+        "category": "Material",
+        "name": "Aquamarine Pearl",
+        "link": "https://coryn.club/item.php?id=7162"
+      },
+      {
+        "category": "Material",
+        "name": "Moist Thin Wing",
+        "link": "https://coryn.club/item.php?id=7160"
+      }
+    ]
+  },
+  {
+    "name": "Fantica",
+    "level": 284,
+    "type": "-",
+    "hp": 14777385,
+    "element": "Water",
+    "exp": 55153,
+    "tamable": false,
+    "spawn": {
+      "map": "Espuma Dome: Area 2",
+      "link": "https://coryn.club/map.php?id=542"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Seahorse Herbal Medicine",
+        "link": "https://coryn.club/item.php?id=7367"
+      },
+      {
+        "category": "Material",
+        "name": "Circular Plate",
+        "link": "https://coryn.club/item.php?id=7452"
+      },
+      {
+        "category": "Material",
+        "name": "Coral Rock",
+        "link": "https://coryn.club/item.php?id=7453"
+      }
+    ]
+  },
+  {
+    "name": "Capo Profundo",
+    "level": 287,
+    "type": "-",
+    "hp": 15800000,
+    "element": "Water",
+    "exp": 60500,
+    "tamable": false,
+    "spawn": {
+      "map": "Abandoned District: Area 3",
+      "link": "https://coryn.club/map.php?id=553"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Sharp Caudal Fin",
+        "link": "https://coryn.club/item.php?id=7464"
+      },
+      {
+        "category": "Material",
+        "name": "Abyssal Creature Fang",
+        "link": "https://coryn.club/item.php?id=7448"
+      },
+      {
+        "category": "Material",
+        "name": "Abyssal Kelp",
+        "link": "https://coryn.club/item.php?id=7463"
+      }
+    ]
+  },
+  {
+    "name": "Limacina",
+    "level": 290,
+    "type": "-",
+    "hp": 0,
+    "element": "Fire",
+    "exp": 71600,
+    "tamable": false,
+    "spawn": {
+      "map": "Deep Sea: Zone 2",
+      "link": "https://coryn.club/map.php?id=574"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Luminous Bacteria",
+        "link": "https://coryn.club/item.php?id=7571"
+      },
+      {
+        "category": "Material",
+        "name": "Cute Marine Wing",
+        "link": "https://coryn.club/item.php?id=7570"
+      },
+      {
+        "category": "Material",
+        "name": "Seabed Serenity",
+        "link": "https://coryn.club/item.php?id=7574"
+      }
+    ]
+  },
+  {
+    "name": "Meteora",
+    "level": 302,
+    "type": "-",
+    "hp": 0,
+    "element": "Fire",
+    "exp": 74656,
+    "tamable": false,
+    "spawn": {
+      "map": "Menabra Plains",
+      "link": "https://coryn.club/map.php?id=592"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Tektite",
+        "link": "https://coryn.club/item.php?id=7668"
+      },
+      {
+        "category": "Material",
+        "name": "Meteoric Iron",
+        "link": "https://coryn.club/item.php?id=7657"
+      },
+      {
+        "category": "Material",
+        "name": "Abyssal Light",
+        "link": "https://coryn.club/item.php?id=7658"
+      }
+    ]
+  },
+  {
+    "name": "Wiltileaf",
+    "level": 305,
+    "type": "-",
+    "hp": 0,
+    "element": "Fire",
+    "exp": 6538,
+    "tamable": false,
+    "spawn": {
+      "map": "Eumano Village Ruins: Area 2",
+      "link": "https://coryn.club/map.php?id=599"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Tangled Roots",
+        "link": "https://coryn.club/item.php?id=7728"
+      },
+      {
+        "category": "Material",
+        "name": "Old Tree Sap",
+        "link": "https://coryn.club/item.php?id=7709"
+      },
+      {
+        "category": "Material",
+        "name": "Spiral Tree Bark",
+        "link": "https://coryn.club/item.php?id=7727"
+      }
+    ]
+  },
+  {
+    "name": "Dandolion",
+    "level": 308,
+    "type": "-",
+    "hp": 0,
+    "element": "Water",
+    "exp": 83000,
+    "tamable": false,
+    "spawn": {
+      "map": "Umidus Valley: Cliff Path",
+      "link": "https://coryn.club/map.php?id=619"
+    },
+    "drops": [
+      {
+        "category": "Usable",
+        "name": "Dandelion Coffee",
+        "link": "https://coryn.club/item.php?id=7950"
+      },
+      {
+        "category": "Material",
+        "name": "Dandelion Fluff",
+        "link": "https://coryn.club/item.php?id=7949"
+      },
+      {
+        "category": "Material",
+        "name": "Dandelion Tooth",
+        "link": "https://coryn.club/item.php?id=7975"
+      }
+    ]
+  },
+  {
+    "name": "Meduso",
+    "level": 311,
+    "type": "-",
+    "hp": "Unknown",
+    "element": "Water",
+    "exp": 84508,
+    "tamable": false,
+    "spawn": {
+      "map": "Aquastida Inner Ward",
+      "link": "https://coryn.club/map.php?id=623"
+    },
+    "drops": [
+      {
+        "category": "Material",
+        "name": "Seashell Palm",
+        "link": "https://coryn.club/item.php?id=8013"
+      },
+      {
+        "category": "Material",
+        "name": "Flourescent Tentacle",
+        "link": "https://coryn.club/item.php?id=8022"
+      },
+      {
+        "category": "Material",
+        "name": "Gelatinous Umbrella",
+        "link": "https://coryn.club/item.php?id=8014"
+      }
+    ]
+  }
+]

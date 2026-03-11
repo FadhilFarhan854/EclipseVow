@@ -79,7 +79,7 @@ const JoinSection = () => {
           <p className="mt-6 text-muted-foreground text-sm font-body">
             or find us on{" "}
             <a
-              href="#"
+              href="https://discord.gg/P2R9Wxhc4Q"
               className="text-primary hover:text-glow transition-all duration-300 underline underline-offset-4"
             >
               Discord

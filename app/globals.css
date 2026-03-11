@@ -114,6 +114,17 @@
     50% { opacity: 1; }
   }
 
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 50%, 90% { transform: translateX(-4px); }
+    30%, 70% { transform: translateX(4px); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   .animate-float { animation: float 6s ease-in-out infinite; }
   .animate-float-slow { animation: floatSlow 8s ease-in-out infinite; }
   .animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }

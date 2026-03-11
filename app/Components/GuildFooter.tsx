@@ -7,7 +7,7 @@ const GuildFooter = () => {
         </h3>
 
         <div className="flex justify-center gap-6 mb-8">
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-body">
+          <a href="https://discord.gg/P2R9Wxhc4Q" className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-body">
             Discord
           </a>
           <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-body">

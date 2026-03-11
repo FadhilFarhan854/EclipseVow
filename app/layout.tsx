@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cinzel, Crimson_Text } from "next/font/google";
 import "./globals.css";
 import MusicPlayer from "./Components/MusicPlayer";
+import NavigationFAB from "./Components/NavigationFAB";
 
 const cinzel = Cinzel({
   variable: "--font-display",
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cinzel.variable} ${crimsonText.variable}`}>
       <body className="min-h-screen bg-background flex flex-col">
+        <NavigationFAB />
         <MusicPlayer />
         {children}
       </body>
