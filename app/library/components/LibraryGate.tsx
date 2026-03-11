@@ -5,21 +5,17 @@ import { useRouter } from "next/navigation";
 import { Lock, Eye, EyeOff, BookOpen } from "lucide-react";
 import FloatingParticles from "../../Components/FloatingParticles";
 
-const LIBRARY_PASSWORD = process.env.NEXT_PUBLIC_LIBRARY_PASSWORD || "eclipsevow";
+const LIBRARY_PASSWORD = process.env.LIBRARY_PASSWORD || "eclipsevow";
 const STORAGE_KEY = "eclipse-library-auth";
 
 export function useLibraryAuth() {
   const [authenticated, setAuthenticated] = useState(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       return sessionStorage.getItem(STORAGE_KEY) === "true";
     }
     return false;
   });
-  const [checking, setChecking] = useState(true);
-
-  useEffect(() => {
-    setChecking(false);
-  }, []);
+  const [checking, setChecking] = useState(false);
 
   const login = (password: string): boolean => {
     if (password.toLowerCase().trim() === LIBRARY_PASSWORD) {
