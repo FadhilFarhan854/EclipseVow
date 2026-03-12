@@ -2,25 +2,35 @@
 
 import { useState } from "react";
 import FloatingParticles from "../../Components/FloatingParticles";
+import { Camera } from "lucide-react";
+import AddMemoryModal from "./AddMemoryModal";
 
-import { BookOpen } from "lucide-react";
-import AddKnowledgeModal from "@/app/Components/AddKnowledgeModal";
 
-const LibraryHero = () => {
+interface RemembranceHeroProps {
+  onMemoryAdded: () => void;
+}
+
+const RemembranceHero = ({ onMemoryAdded }: RemembranceHeroProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleSuccess = () => {
+    setIsModalOpen(false);
+    onMemoryAdded();
+  };
+
   return (
     <>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background — responsive images */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
-          style={{ backgroundImage: "url(/asset/library-mobile.webp)" }}
+          style={{ backgroundImage: "url(/asset/Remebrance.webp)" }}
         />
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
           style={{ backgroundImage: "url(/asset/eclipse-moon.jpg)" }}
         />
-        <div className="absolute inset-0 bg-background/40" />
+        <div className="absolute inset-0 bg-background/50" />
         <FloatingParticles />
 
         {/* Content */}
@@ -29,25 +39,26 @@ const LibraryHero = () => {
             Eclipse Vow
           </h1>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl tracking-wider text-foreground/80 mb-6">
-            Library
+            Remembrance
           </h2>
           <div className="divider-glow w-48 mx-auto mb-6" />
           <p className="font-body text-lg md:text-xl text-foreground/60 italic tracking-wide leading-relaxed mb-4">
-            &quot;Di balik setiap petualangan, ada pengetahuan yang terkumpul.&quot;
+            &quot;Even we&apos;re not here anymore, the memories remain.&quot;
           </p>
           <p className="font-body text-sm md:text-base text-foreground/40 leading-relaxed">
-            Para Vowbearer mengumpulkan catatan tentang setiap makhluk, setiap kristal, dan setiap senjata
-            yang mereka temui dalam perjalanan mereka. Arsip ini adalah memori kolektif mereka — 
-            bukti bahwa mereka pernah berjuang, pernah bertahan, dan pernah mengingat.
+            Para Vowbearer tak hanya bertempur bersama — mereka juga tertawa, berpetualang,
+            dan menciptakan kenangan. Di galeri ini tersimpan fragmen-fragmen waktu yang mereka
+            abadikan: bukti bahwa di balik setiap pertempuran, ada ikatan yang tak bisa dipatahkan.
+            Sebuah sumpah bukan hanya soal kekuatan — tapi soal mengingat.
           </p>
 
-          {/* Add Knowledge Button */}
+          {/* Add Memory Button */}
           <button
             onClick={() => setIsModalOpen(true)}
-            className="mt-12 px-6 py-3 rounded-lg border bg-[#2a2d3dbd] border-primary/40 hover:border-primary/80  hover:bg-primary/10 text-primary hover:text-primary/90 transition-all cursor-pointer flex items-center gap-2 mx-auto font-display tracking-wider text-sm md:text-base group hover:shadow-lg hover:shadow-primary/20"
+            className="mt-12 px-6 py-3 rounded-lg border bg-[#2a2d3dbd] border-primary/40 hover:border-primary/80 hover:bg-primary/10 text-primary hover:text-primary/90 transition-all cursor-pointer flex items-center gap-2 mx-auto font-display tracking-wider text-sm md:text-base group hover:shadow-lg hover:shadow-primary/20"
           >
-            <BookOpen className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            Add Knowledge
+            <Camera className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            Add Memory
           </button>
         </div>
 
@@ -56,9 +67,13 @@ const LibraryHero = () => {
       </section>
 
       {/* Modal */}
-      <AddKnowledgeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <AddMemoryModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onSuccess={handleSuccess}
+      />
     </>
   );
 };
 
-export default LibraryHero;
+export default RemembranceHero;

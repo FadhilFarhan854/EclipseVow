@@ -129,5 +129,9 @@
   .animate-float-slow { animation: floatSlow 8s ease-in-out infinite; }
   .animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
   .animate-twinkle { animation: twinkle 3s ease-in-out infinite; }
+
+  /* Hide scrollbar */
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { scrollbar-width: none; -ms-overflow-style: none; }
 }
 

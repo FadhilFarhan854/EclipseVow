@@ -27,7 +27,7 @@ const books: BookDef[] = [
     iconName: "skull",
     color: "from-blue-950/60 via-blue-900/30 to-transparent",
     spineColor: "bg-blue-800/80",
-    file: "/asset/bos.json",
+    file: "/api/library?type=boss",
   },
   {
     id: "miniboss",
@@ -37,7 +37,7 @@ const books: BookDef[] = [
     iconName: "bug",
     color: "from-blue-900/60 via-blue-950/30 to-transparent",
     spineColor: "bg-blue-700/80",
-    file: "/asset/miniboss.json",
+    file: "/api/library?type=miniboss",
   },
   {
     id: "crysta",
@@ -47,7 +47,7 @@ const books: BookDef[] = [
     iconName: "gem",
     color: "from-indigo-900/60 via-indigo-950/30 to-transparent",
     spineColor: "bg-indigo-700/80",
-    file: "/asset/crysta.json",
+    file: "/api/library?type=crysta",
   },
   {
     id: "equipment",
@@ -57,7 +57,7 @@ const books: BookDef[] = [
     iconName: "sword",
     color: "from-sky-900/60 via-sky-950/30 to-transparent",
     spineColor: "bg-sky-700/80",
-    file: "/asset/eq.json",
+    file: "/api/library?type=equipment",
   },
 ];
 

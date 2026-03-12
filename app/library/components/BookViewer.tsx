@@ -446,6 +446,25 @@ const BossPage = ({ entry }: { entry: BossEntry }) => (
       </div>
     </div>
 
+    {/* Proration Stats */}
+    <div>
+      <Label>Proration Stats</Label>
+      <div className="mt-2 grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div className="rounded border border-border/40 px-3 py-2">
+          <div className="font-display text-[10px] tracking-widest uppercase text-gray-400/70">Normal</div>
+          <div className="font-body text-lg text-foreground">{entry.proration_normal || "-"}</div>
+        </div>
+        <div className="rounded border border-border/40 px-3 py-2">
+          <div className="font-display text-[10px] tracking-widest uppercase text-orange-400/70">Physical</div>
+          <div className="font-body text-lg text-foreground">{entry.proration_phys || "-"}</div>
+        </div>
+        <div className="rounded border border-border/40 px-3 py-2">
+          <div className="font-display text-[10px] tracking-widest uppercase text-cyan-400/70">Magic</div>
+          <div className="font-body text-lg text-foreground">{entry.proration_magic || "-"}</div>
+        </div>
+      </div>
+    </div>
+
     {/* Location */}
     {entry.location && (
       <div>
