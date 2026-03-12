@@ -24,7 +24,7 @@ const RemembranceHero = ({ onMemoryAdded }: RemembranceHeroProps) => {
         {/* Background — responsive images */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
-          style={{ backgroundImage: "url(/asset/Remebrance.webp)" }}
+          style={{ backgroundImage: "url(/asset/remebrance.webp)" }}
         />
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
