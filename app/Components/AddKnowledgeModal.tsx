@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X, Skull, Bug, Gem, Sword, Loader2, Plus, Trash2 } from "lucide-react";
 
 interface BookOption {
@@ -49,17 +49,20 @@ const AddKnowledgeModal = ({
   const [formData, setFormData] = useState<Record<string, any>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [hasPrefilledBossId, setHasPrefilledBossId] = useState(false);
 
   const handleBookSelect = (bookId: BookOption["id"]) => {
     setSelectedBook(bookId);
     setFormData({});
     setError("");
+    setHasPrefilledBossId(false);
   };
 
   const handleBack = () => {
     setSelectedBook(null);
     setFormData({});
     setError("");
+    setHasPrefilledBossId(false);
   };
 
   const handleInputChange = (
@@ -132,8 +135,57 @@ const AddKnowledgeModal = ({
     setSelectedBook(null);
     setFormData({});
     setError("");
+    setHasPrefilledBossId(false);
     onClose();
   };
+
+  // Prefill next boss ID (last id + 1)
+  useEffect(() => {
+    let cancelled = false;
+
+    const prefillBossId = async () => {
+      if (selectedBook !== "boss" || hasPrefilledBossId) return;
+
+      try {
+        const res = await fetch("/api/library?type=boss", { cache: "no-store" });
+        if (!res.ok) return;
+
+        const data = await res.json();
+        if (!Array.isArray(data)) return;
+
+        let maxId = 0;
+        for (const item of data) {
+          const rawId = (item as any).id ?? (item as any).ID ?? (item as any).Id;
+          const n = parseInt(String(rawId), 10);
+          if (!Number.isNaN(n) && n > maxId) {
+            maxId = n;
+          }
+        }
+
+        const nextId = String((maxId || 0) + 1);
+
+        if (cancelled) return;
+
+        setFormData((prev) => {
+          if (prev.id) return prev;
+          return {
+            ...prev,
+            id: nextId,
+          };
+        });
+
+        setHasPrefilledBossId(true);
+      } catch {
+        // Ignore errors; allow manual ID entry
+      }
+    };
+
+    prefillBossId();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedBook, hasPrefilledBossId]);
 
   if (!isOpen) return null;
 
@@ -288,16 +340,11 @@ const DynamicForm = ({
           )}
 
           {field.type === "array" && (
-            <input
-              type="text"
+            <ArrayInput
+              field={field.name}
               placeholder={field.placeholder || "Separate with commas"}
-              value={
-                Array.isArray(formData[field.name])
-                  ? formData[field.name].join(", ")
-                  : ""
-              }
-              onChange={(e) => onInputChange(field.name, e.target.value, true)}
-              className="w-full px-3 py-2 rounded border border-border bg-secondary/30 text-foreground font-body text-sm placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-colors"
+              value={formData[field.name]}
+              onInputChange={onInputChange}
             />
           )}
 
@@ -326,6 +373,56 @@ const DynamicForm = ({
         </div>
       ))}
     </div>
+  );
+};
+
+/* ── Array Input Component ── */
+// Keeps a raw text buffer so commas aren't stripped while the user is typing.
+// The old approach converted the value back via .join(", ") on every render,
+// which removed trailing commas mid-typing.
+const ArrayInput = ({
+  field,
+  placeholder,
+  value,
+  onInputChange,
+}: {
+  field: string;
+  placeholder: string;
+  value: any;
+  onInputChange: (field: string, value: any, isArray?: boolean) => void;
+}) => {
+  const [raw, setRaw] = useState(
+    Array.isArray(value) ? value.join(", ") : ""
+  );
+
+  // Reset raw text when the external value is cleared (e.g. form reset / back)
+  useEffect(() => {
+    if (!value || (Array.isArray(value) && value.length === 0)) {
+      setRaw("");
+    }
+    // Only trigger on meaningful external resets, not on every keystroke
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [!value || (Array.isArray(value) && value.length === 0)]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const text = e.target.value;
+    setRaw(text);
+    const arrayValue = text
+      .split(",")
+      .map((v) => v.trim())
+      .filter(Boolean);
+    // Pass the parsed array directly (isArray = false so it skips the split logic in parent)
+    onInputChange(field, arrayValue, false);
+  };
+
+  return (
+    <input
+      type="text"
+      placeholder={placeholder}
+      value={raw}
+      onChange={handleChange}
+      className="w-full px-3 py-2 rounded border border-border bg-secondary/30 text-foreground font-body text-sm placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-colors"
+    />
   );
 };
 
@@ -476,7 +573,7 @@ const getFormFields = (bookType: string): FormField[] => {
         { name: "xp", label: "Experience", type: "number", placeholder: "e.g. 12000" },
         { name: "def", label: "DEF", type: "text", placeholder: "e.g. 1200 or 1200 Break Part: head -10" },
         { name: "mdef", label: "MDEF", type: "text", placeholder: "e.g. 1500 or 1500 Break Part: tail +5" },
-        { name: "flee", label: "Flee", type: "number", placeholder: "e.g. 350" },
+        { name: "flee", label: "Flee", type: "number", placeholder: "e.g. 112" },
         { name: "guard", label: "Guard", type: "number", placeholder: "e.g. 0" },
         { name: "evade", label: "Evade", type: "number", placeholder: "e.g. 15" },
         { name: "proration_normal", label: "Proration Normal", type: "number", placeholder: "e.g. 10" },
