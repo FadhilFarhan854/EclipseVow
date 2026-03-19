@@ -73,21 +73,37 @@ const AddMemoryModal = ({ isOpen, onClose, onSuccess }: AddMemoryModalProps) => 
     setError("");
 
     try {
-      // Step 1: Upload image to Cloudinary via our API
-      const formData = new FormData();
-      formData.append("file", file);
+      // Step 1: Get upload signature from our API
+      const sigRes = await fetch("/api/upload");
+      if (!sigRes.ok) {
+        const sigErr = await sigRes.json();
+        throw new Error(sigErr.message || "Failed to get upload signature");
+      }
+      
+      const { signature, timestamp, folder, apiKey, cloudName } = await sigRes.json();
 
-      const uploadRes = await fetch("/api/upload", {
-        method: "POST",
-        body: formData,
-      });
+      // Step 2: Upload directly to Cloudinary
+      const cloudinaryForm = new FormData();
+      cloudinaryForm.append("file", file);
+      cloudinaryForm.append("folder", folder);
+      cloudinaryForm.append("timestamp", timestamp.toString());
+      cloudinaryForm.append("api_key", apiKey);
+      cloudinaryForm.append("signature", signature);
+
+      const uploadRes = await fetch(
+        `https://api.cloudinary.com/v1_1/${cloudName}/auto/upload`,
+        {
+          method: "POST",
+          body: cloudinaryForm,
+        }
+      );
 
       if (!uploadRes.ok) {
         const uploadErr = await uploadRes.json();
-        throw new Error(uploadErr.message || "Failed to upload image");
+        throw new Error(uploadErr.error?.message || "Failed to upload media to Cloudinary");
       }
 
-      const { url } = await uploadRes.json();
+      const { secure_url: url } = await uploadRes.json();
 
       // Step 2: Save metadata to npoint.io via our API
       const saveRes = await fetch("/api/remembrance", {
