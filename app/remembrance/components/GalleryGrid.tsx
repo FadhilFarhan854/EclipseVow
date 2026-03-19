@@ -2,7 +2,9 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
-import { X, Calendar, ImageOff, Loader2 } from "lucide-react";
+import { X, Calendar, ImageOff, Loader2, PlayCircle } from "lucide-react";
+
+const isVideo = (url: string) => url.match(/\.(mp4|webm|ogg|mov)$/i);
 
 interface MemoryItem {
   name: string;
@@ -137,14 +139,38 @@ const GalleryGrid = ({ memories, loading }: GalleryGridProps) => {
                 onClick={() => setSelectedMemory(memory)}
                 style={{ animationDelay: `${(idx % ITEMS_PER_PAGE) * 80}ms` }}
               >
-                {/* Image */}
-                <Image
-                  src={memory.url}
-                  alt={memory.name}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
+                {/* Image / Video */}
+                {isVideo(memory.url) ? (
+                  <>
+                    <video
+                      src={memory.url}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      muted
+                      loop
+                      playsInline
+                      onMouseEnter={(e) => {
+                        const target = e.target as HTMLVideoElement;
+                        target.play().catch(() => {});
+                      }}
+                      onMouseLeave={(e) => {
+                        const target = e.target as HTMLVideoElement;
+                        target.pause();
+                        target.currentTime = 0;
+                      }}
+                    />
+                    <div className="absolute top-3 right-3 bg-black/50 p-1.5 rounded-full z-10">
+                      <PlayCircle className="w-5 h-5 text-white/80" />
+                    </div>
+                  </>
+                ) : (
+                  <Image
+                    src={memory.url}
+                    alt={memory.name}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                )}
 
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
@@ -210,13 +236,22 @@ const GalleryGrid = ({ memories, loading }: GalleryGridProps) => {
               <X className="w-6 h-6" />
             </button>
 
-            {/* Image */}
-            <div className="relative w-full rounded-t-xl overflow-hidden bg-black flex items-center justify-center" style={{ maxHeight: "70vh" }}>
-              <img
-                src={selectedMemory.url}
-                alt={selectedMemory.name}
-                className="max-w-full max-h-[70vh] object-contain"
-              />
+            {/* Image / Video */}
+            <div className="relative w-full rounded-t-xl overflow-hidden bg-black flex items-center justify-center" style={{ maxHeight: "70vh", minHeight: "30vh" }}>
+              {isVideo(selectedMemory.url) ? (
+                <video
+                  src={selectedMemory.url}
+                  controls
+                  autoPlay
+                  className="max-w-full max-h-[70vh] object-contain w-full h-full"
+                />
+              ) : (
+                <img
+                  src={selectedMemory.url}
+                  alt={selectedMemory.name}
+                  className="max-w-full max-h-[70vh] object-contain"
+                />
+              )}
             </div>
 
             {/* Info */}

@@ -15,6 +15,7 @@ const AddMemoryModal = ({ isOpen, onClose, onSuccess }: AddMemoryModalProps) => 
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
+  const [fileType, setFileType] = useState<"image" | "video" | null>(null);
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -25,6 +26,7 @@ const AddMemoryModal = ({ isOpen, onClose, onSuccess }: AddMemoryModalProps) => 
     setDesc("");
     setFile(null);
     setPreview(null);
+    setFileType(null);
     setError("");
     onClose();
   };
@@ -33,25 +35,31 @@ const AddMemoryModal = ({ isOpen, onClose, onSuccess }: AddMemoryModalProps) => 
     const selected = e.target.files?.[0];
     if (!selected) return;
 
+    const isVideo = selected.type.startsWith("video/");
+    const isImage = selected.type.startsWith("image/");
+
     // Validate file type
-    if (!selected.type.startsWith("image/")) {
-      setError("Please select an image file");
+    if (!isImage && !isVideo) {
+      setError("Please select an image or video file");
       return;
     }
 
-    // Validate file size (max 10MB)
-    if (selected.size > 10 * 1024 * 1024) {
-      setError("Image must be smaller than 10MB");
+    // Validate file size (max 10MB for image, 50MB for video)
+    const maxSize = isVideo ? 50 * 1024 * 1024 : 10 * 1024 * 1024;
+    if (selected.size > maxSize) {
+      setError(`File must be smaller than ${isVideo ? '50MB' : '10MB'}`);
       return;
     }
 
     setFile(selected);
+    setFileType(isVideo ? "video" : "image");
     setError("");
 
     // Create preview
-    const reader = new FileReader();
-    reader.onload = (ev) => setPreview(ev.target?.result as string);
-    reader.readAsDataURL(selected);
+    if (preview) {
+      URL.revokeObjectURL(preview); // cleanup old preview
+    }
+    setPreview(URL.createObjectURL(selected));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -134,10 +142,10 @@ const AddMemoryModal = ({ isOpen, onClose, onSuccess }: AddMemoryModalProps) => 
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="p-5 space-y-5">
-          {/* Image Upload */}
+          {/* Media Upload */}
           <div>
             <label className="block font-display text-sm tracking-wider text-foreground/60 mb-2">
-              Photo *
+              Media (Photo/Video) *
             </label>
             <div
               onClick={() => fileInputRef.current?.click()}
@@ -148,12 +156,24 @@ const AddMemoryModal = ({ isOpen, onClose, onSuccess }: AddMemoryModalProps) => 
               }`}
             >
               {preview ? (
-                <div className="relative aspect-video">
-                  <img
-                    src={preview}
-                    alt="Preview"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="relative aspect-video bg-black rounded-lg overflow-hidden">
+                  {fileType === "video" ? (
+                    <video
+                      src={preview}
+                      className="w-full h-full object-contain"
+                      muted
+                      onLoadedMetadata={(e) => {
+                         // Play very briefly if we want to show its a video, or just show poster
+                         e.currentTarget.currentTime = 0;
+                      }}
+                    />
+                  ) : (
+                    <img
+                      src={preview}
+                      alt="Preview"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                     <p className="text-white text-sm font-display tracking-wider">
                       Click to change
@@ -164,10 +184,11 @@ const AddMemoryModal = ({ isOpen, onClose, onSuccess }: AddMemoryModalProps) => 
                 <div className="flex flex-col items-center justify-center py-12 text-foreground/30">
                   <ImagePlus className="w-10 h-10 mb-3" />
                   <p className="font-display text-sm tracking-wider">
-                    Click to select an image
+                    Click to select an image or video
                   </p>
-                  <p className="text-xs mt-1 text-foreground/20">
-                    JPG, PNG, WebP — max 10MB
+                  <p className="text-xs mt-1 text-foreground/20 text-center">
+                    JPG, PNG, WebP (max 10MB)<br/>
+                    MP4, WebM (max 50MB)
                   </p>
                 </div>
               )}
@@ -175,7 +196,7 @@ const AddMemoryModal = ({ isOpen, onClose, onSuccess }: AddMemoryModalProps) => 
             <input
               ref={fileInputRef}
               type="file"
-              accept="image/*"
+              accept="image/*,video/*"
               onChange={handleFileChange}
               className="hidden"
             />
