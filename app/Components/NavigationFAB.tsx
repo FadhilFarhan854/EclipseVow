@@ -35,6 +35,24 @@ const NavigationFAB = () => {
             </div>
           </Link>
         )}
+
+        {!pathname.startsWith("/story") && (
+          <Link
+            href="/story"
+            className="flex items-center gap-3 justify-end group transition-all duration-300"
+            title="Story"
+            onClick={() => setIsOpen(false)}
+          >
+            <span className="bg-card border border-border px-3 py-1.5 rounded-lg text-sm text-primary shadow-lg whitespace-nowrap opacity-90 group-hover:opacity-100 group-hover:bg-primary group-hover:text-background transition-all font-display tracking-wider">
+              Story
+            </span>
+            <div className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background transition-all duration-300 box-glow-hover flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </Link>
+        )}
         
         {pathname !== "/library" && (
           <Link
