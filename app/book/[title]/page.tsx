@@ -1,0 +1,276 @@
+"use client";
+
+import { useState, useEffect, useMemo } from "react";
+import { useRouter, useParams } from "next/navigation";
+import { ChevronLeft, ChevronRight, BookOpen, ListTree } from "lucide-react";
+import Link from "next/link";
+import storyData from "../../../story.json";
+
+// Flatten the story into a list of pages (subchapters)
+export default function BookReader() {
+  const router = useRouter();
+  const params = useParams();
+
+  // Create a flat array of all subchapters to navigate through
+  const pages = useMemo(() => {
+    const flatPages: any[] = [];
+    storyData.chapters.forEach((chapter) => {
+      chapter.sub_chapters.forEach((sub) => {
+        flatPages.push({
+          chapterTitle: chapter.chapter_title,
+          subchapterTitle: sub.title.replace(/^\d+\.\d+\s*/, ""),
+          content: sub.content,
+        });
+      });
+    });
+    return flatPages;
+  }, []);
+
+  const [currentPage, setCurrentPage] = useState(0);
+  const [isSelecting, setIsSelecting] = useState(true);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  // Minimum swipe distance (in px)
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    if (isSelecting) return;
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    if (isSelecting) return;
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (isSelecting || !touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      handleNext();
+    } else if (isRightSwipe) {
+      handlePrev();
+    }
+  };
+
+  // Scroll to top when page changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [currentPage, isSelecting]);
+
+  if (!pages || pages.length === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background text-foreground">
+        <p>Story data not found.</p>
+      </div>
+    );
+  }
+
+  const currentData = pages[currentPage];
+  const isFirstPage = currentPage === 0;
+  const isLastPage = currentPage === pages.length - 1;
+
+  const handleNext = () => {
+    if (!isLastPage) setCurrentPage((prev) => prev + 1);
+  };
+
+  const handlePrev = () => {
+    if (!isFirstPage) setCurrentPage((prev) => prev - 1);
+  };
+
+  const handleSelectPage = (index: number) => {
+    setCurrentPage(index);
+    setIsSelecting(false);
+  };
+
+  return (
+    <main
+      className="min-h-screen bg-[#0d0f17] text-[#e2e8f0] font-body selection:bg-primary/30"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
+      {/* Top Navigation Bar */}
+      <nav className="sticky top-0 z-50 bg-[#0d0f17]/90 backdrop-blur-md border-b border-primary/20 p-4 shadow-lg shadow-black/50">
+        <div className="max-w-4xl mx-auto flex items-center justify-between">
+          <Link
+            href="/story"
+            className="flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors text-sm uppercase tracking-widest"
+          >
+            <ChevronLeft className="w-5 h-5" />
+            <span className="hidden sm:inline">Back to Library</span>
+            <span className="sm:hidden">Back</span>
+          </Link>
+          
+          <div className="flex items-center gap-2">
+            <BookOpen className="w-5 h-5 text-primary/60" />
+            <span className="font-display font-semibold tracking-wider hidden sm:inline-block">
+              {storyData.book_title}
+            </span>
+          </div>
+
+          <div className="flex items-center gap-4">
+            {!isSelecting && (
+              <button
+                onClick={() => setIsSelecting(true)}
+                className="flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors text-sm uppercase tracking-widest"
+              >
+                <ListTree className="w-5 h-5" />
+                <span className="hidden md:inline text-xs">Chapters</span>
+              </button>
+            )}
+            
+            {/* Progress indicator */}
+            {!isSelecting && (
+              <div className="text-xs font-mono text-foreground/40 min-w-[3rem] text-right">
+                {currentPage + 1} / {pages.length}
+              </div>
+            )}
+          </div>
+        </div>
+      </nav>
+
+      {isSelecting ? (
+        <div className="max-w-4xl mx-auto px-6 py-12 md:py-20 animate-in fade-in duration-700">
+          <header className="mb-16 text-center">
+            <h1 className="font-display text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-400 drop-shadow-sm mb-6">
+              Daftar Isi
+            </h1>
+            <p className="text-primary/70 tracking-[0.2em] text-sm uppercase font-semibold">
+              Pilih Bab Untuk Mulai Membaca
+            </p>
+            <div className="divider-glow w-32 mx-auto mt-8 opacity-60" />
+          </header>
+
+          <div className="grid gap-8">
+            {storyData.chapters.map((chapter) => (
+              <div 
+                key={chapter.chapter_id} 
+                className="bg-[#1a1c29]/30 border border-primary/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm hover:border-primary/20 transition-all duration-500"
+              >
+                <h2 className="font-display text-2xl font-bold text-gray-300 mb-6 border-b border-primary/10 pb-4">
+                  {chapter.chapter_title}
+                </h2>
+                <div className="grid gap-3">
+                  {chapter.sub_chapters.map((sub) => {
+                    // Find global index for navigation
+                    let globalIndex = 0;
+                    let found = false;
+                    for (const c of storyData.chapters) {
+                      for (const s of c.sub_chapters) {
+                        if (c.chapter_id === chapter.chapter_id && s.sub_id === sub.sub_id) {
+                          found = true;
+                          break;
+                        }
+                        globalIndex++;
+                      }
+                      if (found) break;
+                    }
+
+                    return (
+                      <button
+                        key={sub.sub_id}
+                        onClick={() => handleSelectPage(globalIndex)}
+                        className="flex items-center justify-between group p-4 rounded-xl bg-background/40 border border-transparent hover:border-primary/30 hover:bg-primary/5 transition-all duration-300 text-left"
+                      >
+                        <span className="font-body text-gray-400 group-hover:text-gray-100 transition-colors tracking-wide">
+                          {sub.title.replace(/^\d+\.\d+\s*/, "")}
+                        </span>
+                        <ChevronRight className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mt-20 text-center opacity-40 italic font-body text-sm">
+            {storyData.book_description}
+          </div>
+        </div>
+      ) : (
+        /* Novel Content Area */
+        <article className="max-w-3xl mx-auto px-6 py-12 md:py-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
+
+          {/* Chapter Header */}
+          <header className="mb-16 text-center">
+            <p className="text-primary/70 tracking-[0.2em] text-sm uppercase mb-4 font-semibold">
+              {currentData.chapterTitle}
+            </p>
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-400 drop-shadow-sm mb-6">
+              {currentData.subchapterTitle}
+            </h1>
+            <div className="divider-glow w-32 mx-auto opacity-60" />
+          </header>
+
+          {/* Story Text */}
+          <div className="prose prose-invert prose-lg max-w-none prose-p:leading-[2.2] prose-p:text-gray-300 prose-p:mb-8 md:prose-p:text-lg">
+            {currentData.content.map((p: string, pIndex: number) => (
+              <p key={pIndex} className="text-justify indent-8 tracking-wide">
+                {p}
+              </p>
+            ))}
+          </div>
+
+          {/* End of chapter mark */}
+          <div className="flex items-center justify-center gap-4 my-20 opacity-30">
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary" />
+            <div className="w-2 h-2 rotate-45 bg-primary" />
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary" />
+          </div>
+
+          {/* Bottom Navigation - Hidden on Mobile, Flex on Desktop */}
+          <nav className="hidden sm:grid grid-cols-2 gap-4 border-t border-primary/20 pt-8 mt-12 pb-24 relative">
+            <button
+              onClick={handlePrev}
+              disabled={isFirstPage}
+              className={`flex items-center justify-center sm:justify-start gap-2 sm:gap-4 px-4 py-4 sm:px-6 rounded-xl border border-primary/10 bg-[#1a1c29]/50 backdrop-blur transition-all duration-300 ${isFirstPage
+                  ? "opacity-0 pointer-events-none"
+                  : "hover:bg-primary/20 hover:border-primary/40 active:scale-95 cursor-pointer text-gray-300 group"
+                }`}
+            >
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-primary shrink-0 group-hover:-translate-x-1 transition-transform" />
+              <div className="text-left hidden sm:block">
+                <p className="text-xs text-foreground/40 uppercase tracking-widest mb-1">Previous</p>
+                <p className="font-display truncate max-w-[150px]">
+                  {!isFirstPage && pages[currentPage - 1].subchapterTitle}
+                </p>
+              </div>
+              <span className="sm:hidden font-display text-sm tracking-wider block w-full text-center">Prev</span>
+            </button>
+
+            <button
+              onClick={handleNext}
+              disabled={isLastPage}
+              className={`flex items-center justify-center sm:justify-end gap-2 sm:gap-4 px-4 py-4 sm:px-6 rounded-xl border border-primary/10 bg-[#1a1c29]/50 backdrop-blur transition-all duration-300 ${isLastPage
+                  ? "opacity-0 pointer-events-none"
+                  : "hover:bg-primary/20 hover:border-primary/40 active:scale-95 cursor-pointer text-gray-300 group"
+                }`}
+            >
+              <div className="text-right hidden sm:block">
+                <p className="text-xs text-foreground/40 uppercase tracking-widest mb-1">Next Page</p>
+                <p className="font-display truncate max-w-[150px]">
+                  {!isLastPage && pages[currentPage + 1].subchapterTitle}
+                </p>
+              </div>
+              <span className="sm:hidden font-display text-sm tracking-wider block w-full text-center">Next</span>
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-primary shrink-0 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </nav>
+
+          {/* Mobile Swipe Hint */}
+          <div className="sm:hidden text-center opacity-30 animate-pulse pb-10">
+            <p className="text-xs uppercase tracking-[0.3em]">geser untuk ke halaman selanjutnya</p>
+          </div>
+        </article>
+      )}
+    </main>
+  );
+}
