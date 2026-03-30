@@ -1,0 +1,102 @@
+Early Game
+BAB 1: Dasar Game
+1. Level
+Level di toram sangat pentinguntuk early game karena semakin tinggi level semakin banyak konten yang dibuka
+konten yang terbuka 
+- Skill Tree (Penting)
+- Craft Item di pandai besi / balcksmith (semakin tinggi lvl semakin bagus eq yg bisa di craft)
+- Stat poin semakin tinggi semakin banyak poin stat yang bisa dipasang(dapat bonus dari achievement ketika sampai di level tertentu)
+
+ada 2 cara untuk boost level, untuk saat ini yang paling cepat adalah menyelesaikan main quest
+pada saat guide ini dibuat(30/03/2026) ketika menyelesaikan main quest dari level 0, kamu akan selesai di level 260
+2. Job
+Job ditoram tidak di lock secara otomatis oeh sistem, game ini bebas kalian mau jadi apapun. 
+pakai magic dmg untuk pedang? bisa
+pakai katana untuk full damage? bisa
+pakai katana tapi ingin lincah misalnya, bisa juga
+ingin jadi tank tapi dengan senjata tongkat mage? bisa
+atau bahkan ingin jadi pedagang yang tidak fokus di kombat/bossing? bisa juga
+game ini konsepnya adalah kebebasan, selagi masih pemula eksplore saja playstyle yang nyaman
+
+3. Skill
+Skill di toram penting banget soalnya ini merupakan mekanik utama dari gaemnya,karena itu disarankan untuk capai level 240 secepatnya di salah satu karakter untuk membuka semua skill di semua karakter
+- skill memiliki tingkatan tertentu ada
+- skill tree lv 1 (kebuka di early game) sampai skill tree lvl 5 di level 240
+- Build skill menyesuaikan dengan job yang ingin dibuat, bisa tanya sepuh apa cari di youtube
+
+4. Stat
+Stat utama di toram ada 6 yaitu
+- STR (Strength)
+- INT (Intelligence)
+- VIT (Vitality)
+- AGI (Agility)
+- DEX (Dexterity)
+
+Sedangkat stat pendukung atau personal stat ada
+- TEC (Technic untuk char blacksmith)
+- CRT (Critical untuk char yang butuh crit lebih(jarang dipakai))
+- MTL (Mental untuk mengurangi ailment dari musuh (stun, jatuh, bergedik, dll))
+- LUK (Luck untuk menambah keberuntungan)
+
+Normalnya untuk char dps/tank menggunakan 2 stat utama
+semisal
+untuk katana menggunakan DEX dan STR atau AGI dan DEX/STR
+mage menggunakan INT dan DEX/STR
+THS atau greatsword menggunakan STR DEX CRT
+dan lain" tergantung kebutuhan kalian
+
+5. equipment
+Equipment di toram ada 5 yaitu
+- Senjata utama (main hand)
+- Senjata tambahan (sub hand)
+- Armor
+- Alat tambahan (additional/add)
+- Cincin (ring)
+
+Equipment bisa didapatkan dari drop monster atau craft di pandai besi
+Equipment statnya bisa di custom oleh player sendiri sesuai kebutuhan, seperti yang dibilang diawal tadi bahwa konsep game ini adalah kebebasan. mau bikin eq dengan stat full mines pun bisa(ga guna juga si)
+Equipment yang dibuat oleh player bisa dibeli di papan kota, setiap kota punya papan untuk perdagang(consignment board)
+
+Note: Jika kalian ingin membeli equipment dari papan atau player, pastikan tanya ke orangyang paham terlebih dahulu untuk menghindari scam atau pemborosan spina 
+
+BAB 2: Main Quest
+Main quest ini penting untuk boost level dan membuka konten di toram, tapi difficultynya ga ngotak. kebanyakan player baru kebantai boss disini.
+Tips MQ/ Main quest
+1. Gunakan Bodyguard dari teman atau guild
+Berikut cara memanggil bodyguard:
+[bodyguard.mp4]
+
+2. Selalu masuk ke difficulty easy bukan normal, berikut adalah cara untuk pindah difficuty:
+[diff.mp4]
+
+3. gunakan teleport ticket atau savepoint untuk memepercepat travel antar merupakan
+untuk teleport, jika kamu ke kota maka bisa menggunakan spina
+jika teleport di luar kota garus pakai teleport ticket, kecuali beberapa tempat.
+item teleport yang harus dibeli adalah Naiata, karena padabab 3 kamu akan jadi babu naiata dan bakal disuruh mondar mandir (itemnya bisa beli dipapan atau minta sepuh)
+
+berikut adalah cara telport di kota:
+[tp_kota.mp4]
+Berikut adalah cara teleport di luar kota:
+[tp_luar_kota.mp4]  
+Berikut adalah cara menggunakan teleport poin(e.g. NAIATA)
+[tp_poin.mp4]
+
+4. jika ingin lebih cepat kalian bisa skip tiap cutscene karena cutscene ini agak lama dan ga terlalu penting(kecuali kalian pengen menikamti storynnya)
+berikut adalah cara skip cutscene:
+[skip_cutscene.mp4]
+
+5. Selalu gunakan buff makanan!
+kalian bisa mengunjungi rumah orang untuk mendapat makanan yang akan meberikan buff
+berikut adalah cara untuk pergi ke rumah orang dan mengambil makanan:
+[rumah_orang.mp4]
+
+untuk kode rumah yang ada buffnya, kalian bisa tanya ke orang atau lihat di discord guild
+rekomendasi buff makanan yang diambil : Max MP(2011234, 1010017, 3017676), AMPR(4040404, 1010017, 2011234), Critical rate(1100000)
+maksimal kalian bisa makan 4 buff orang dan 1 buff yang kalian masak sendiri (total 5)
+
+6. ada boss yang terlalu susah untuk kalian taklukkan, kalian bisa panggil teman atau anggota guild.
+
+jika kalian ingin speedrun(bagi pemula) dengan mengikuti tips ini mungkin kalain bisa menamatkan mq dalam waktu seminggu
+
+BAB 3: Comingsoon
+

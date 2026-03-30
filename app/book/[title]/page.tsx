@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { useRouter, useParams } from "next/navigation";
-import { ChevronLeft, ChevronRight, BookOpen, ListTree } from "lucide-react";
+import { ChevronLeft, ChevronRight, BookOpen, ListTree, Lock } from "lucide-react";
 import Link from "next/link";
 import storyData from "../../../story.json";
 
@@ -14,13 +14,25 @@ export default function BookReader() {
   // Create a flat array of all subchapters to navigate through
   const pages = useMemo(() => {
     const flatPages: any[] = [];
+    let previousQuestIncomplete = false;
+
     storyData.chapters.forEach((chapter) => {
-      chapter.sub_chapters.forEach((sub) => {
+      chapter.sub_chapters.forEach((sub: any) => {
         flatPages.push({
           chapterTitle: chapter.chapter_title,
           subchapterTitle: sub.title.replace(/^\d+\.\d+\s*/, ""),
           content: sub.content,
+          quest: sub.quest || null,
+          completed: sub.completed !== false,
+          chapterId: chapter.chapter_id,
+          subId: sub.sub_id,
+          isLocked: previousQuestIncomplete,
         });
+
+        // If this page has a quest that is not completed, lock subsequent pages
+        if (sub.quest && sub.completed === false) {
+          previousQuestIncomplete = true;
+        }
       });
     });
     return flatPages;
@@ -77,7 +89,7 @@ export default function BookReader() {
   const isLastPage = currentPage === pages.length - 1;
 
   const handleNext = () => {
-    if (!isLastPage) setCurrentPage((prev) => prev + 1);
+    if (!isLastPage && !pages[currentPage + 1].isLocked) setCurrentPage((prev) => prev + 1);
   };
 
   const handlePrev = () => {
@@ -173,16 +185,28 @@ export default function BookReader() {
                       if (found) break;
                     }
 
+                    const pageData = pages[globalIndex];
+                    const isLocked = pageData.isLocked;
+
                     return (
                       <button
                         key={sub.sub_id}
-                        onClick={() => handleSelectPage(globalIndex)}
-                        className="flex items-center justify-between group p-4 rounded-xl bg-background/40 border border-transparent hover:border-primary/30 hover:bg-primary/5 transition-all duration-300 text-left"
+                        onClick={() => !isLocked && handleSelectPage(globalIndex)}
+                        disabled={isLocked}
+                        className={`flex items-center justify-between group p-4 rounded-xl border border-transparent transition-all duration-300 text-left ${
+                          isLocked 
+                            ? "opacity-50 cursor-not-allowed bg-background/20" 
+                            : "bg-background/40 hover:border-primary/30 hover:bg-primary/5"
+                        }`}
                       >
-                        <span className="font-body text-gray-400 group-hover:text-gray-100 transition-colors tracking-wide">
+                        <span className={`font-body tracking-wide ${isLocked ? "text-gray-500" : "text-gray-400 group-hover:text-gray-100 transition-colors"}`}>
                           {sub.title.replace(/^\d+\.\d+\s*/, "")}
                         </span>
-                        <ChevronRight className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
+                        {isLocked ? (
+                          <Lock className="w-4 h-4 text-gray-500" />
+                        ) : (
+                          <ChevronRight className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
+                        )}
                       </button>
                     )
                   })}
@@ -226,6 +250,72 @@ export default function BookReader() {
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary" />
           </div>
 
+          {/* Quest UI */}
+          {currentData.quest && !currentData.completed && (
+            <div className="my-12 p-6 md:p-8 rounded-2xl border border-primary/30 bg-primary/5 backdrop-blur-sm shadow-[0_0_30px_rgba(var(--primary),0.1)]">
+              <h3 className="font-display text-2xl text-primary mb-6 font-bold border-b border-primary/10 pb-4">
+                Quest: Selesaikan Tantangan!
+              </h3>
+              
+              <div className="mb-6">
+                <p className="text-sm text-gray-400 mb-3 uppercase tracking-widest font-semibold">Tugas</p>
+                <ul className="list-disc list-inside text-gray-300 space-y-2">
+                  {currentData.quest.task.map((t: string, idx: number) => (
+                    <li key={idx} className="tracking-wide">{t}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <p className="text-sm text-gray-400 mb-3 uppercase tracking-widest font-semibold">Anggota Terlibat</p>
+                <div className="flex flex-wrap gap-2">
+                  {currentData.quest.member.map((m: string, idx: number) => (
+                    <span key={idx} className="px-4 py-1.5 bg-background/50 text-gray-300 rounded-full text-sm border border-primary/20 shadow-sm">
+                      {m}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-8 border-t border-primary/20 pt-6 gap-6">
+                <div className="text-gray-300">
+                  <span className="text-sm text-gray-500 uppercase tracking-widest block mb-1">Hadiah (Coin)</span>
+                  <span className="font-display text-3xl text-yellow-500 font-bold drop-shadow-[0_0_10px_rgba(234,179,8,0.3)]">
+                    {Number(currentData.quest.reward).toLocaleString('id-ID')}
+                  </span>
+                </div>
+                
+                <button
+                  onClick={async () => {
+                    const pwd = window.prompt("Masukkan password untuk menyelesaikan quest:");
+                    if (pwd === "123321") {
+                      try {
+                        const res = await fetch("/api/complete-quest", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({ chapterId: currentData.chapterId, subId: currentData.subId }),
+                        });
+                        if (res.ok) {
+                          alert("Quest berhasil diselesaikan! Halaman selanjutnya terbuka.");
+                          window.location.reload();
+                        } else {
+                          alert("Gagal memperbarui status quest.");
+                        }
+                      } catch (err) {
+                        alert("Terjadi kesalahan.");
+                      }
+                    } else if (pwd !== null) {
+                      alert("Password salah!");
+                    }
+                  }}
+                  className="w-full sm:w-auto px-8 py-3 bg-primary/20 hover:bg-primary text-primary hover:text-primary-foreground border border-primary/40 rounded-xl transition-all duration-300 font-bold tracking-wide uppercase shadow-[0_0_20px_rgba(var(--primary),0.2)] hover:shadow-[0_0_30px_rgba(var(--primary),0.4)]"
+                >
+                  Selesaikan Quest
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* Bottom Navigation - Hidden on Mobile, Flex on Desktop */}
           <nav className="hidden sm:grid grid-cols-2 gap-4 border-t border-primary/20 pt-8 mt-12 pb-24 relative">
             <button
@@ -248,20 +338,28 @@ export default function BookReader() {
 
             <button
               onClick={handleNext}
-              disabled={isLastPage}
-              className={`flex items-center justify-center sm:justify-end gap-2 sm:gap-4 px-4 py-4 sm:px-6 rounded-xl border border-primary/10 bg-[#1a1c29]/50 backdrop-blur transition-all duration-300 ${isLastPage
-                  ? "opacity-0 pointer-events-none"
+              disabled={isLastPage || pages[currentPage + 1]?.isLocked}
+              className={`flex items-center justify-center sm:justify-end gap-2 sm:gap-4 px-4 py-4 sm:px-6 rounded-xl border border-primary/10 bg-[#1a1c29]/50 backdrop-blur transition-all duration-300 ${isLastPage || pages[currentPage + 1]?.isLocked
+                  ? "opacity-30 pointer-events-none"
                   : "hover:bg-primary/20 hover:border-primary/40 active:scale-95 cursor-pointer text-gray-300 group"
                 }`}
             >
               <div className="text-right hidden sm:block">
-                <p className="text-xs text-foreground/40 uppercase tracking-widest mb-1">Next Page</p>
+                <p className="text-xs text-foreground/40 uppercase tracking-widest mb-1">
+                  {pages[currentPage + 1]?.isLocked ? "Terkunci" : "Next Page"}
+                </p>
                 <p className="font-display truncate max-w-[150px]">
                   {!isLastPage && pages[currentPage + 1].subchapterTitle}
                 </p>
               </div>
-              <span className="sm:hidden font-display text-sm tracking-wider block w-full text-center">Next</span>
-              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-primary shrink-0 group-hover:translate-x-1 transition-transform" />
+              <span className="sm:hidden font-display text-sm tracking-wider block w-full text-center">
+                {pages[currentPage + 1]?.isLocked ? "Terkunci" : "Next"}
+              </span>
+              {pages[currentPage + 1]?.isLocked ? (
+                <Lock className="w-5 h-5 sm:w-6 sm:h-6 text-gray-500 shrink-0" />
+              ) : (
+                <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-primary shrink-0 group-hover:translate-x-1 transition-transform" />
+              )}
             </button>
           </nav>
 
